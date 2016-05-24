@@ -1,6 +1,6 @@
 ﻿namespace Theatre
 {
-    partial class Form1
+    partial class FormTickets
     {
         /// <summary>
         /// Требуется переменная конструктора.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTickets));
             this.lblperfomance = new System.Windows.Forms.Label();
             this.cbPerfomance = new System.Windows.Forms.ComboBox();
             this.спектакльBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -61,10 +62,14 @@
             this.физическое_лицоTableAdapter = new Theatre.Продажа_билетов_в_театрDataSetTableAdapters.Физическое_лицоTableAdapter();
             this.местоTableAdapter = new Theatre.Продажа_билетов_в_театрDataSetTableAdapters.МестоTableAdapter();
             this.единица_измеренияTableAdapter = new Theatre.Продажа_билетов_в_театрDataSetTableAdapters.Единица_измеренияTableAdapter();
-            this.tabControl = new System.Windows.Forms.TabControl();
+            this.tabTickets = new System.Windows.Forms.TabControl();
             this.tpTicketSelling = new System.Windows.Forms.TabPage();
             this.tpPerfomaceEdit = new System.Windows.Forms.TabPage();
             this.спектакльDataGridView = new System.Windows.Forms.DataGridView();
+            this.PerfomanceId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Perfomance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PerfomanceDuration = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSavePerfomance = new System.Windows.Forms.Button();
             this.cbPlayType = new System.Windows.Forms.ComboBox();
             this.типСпектакляBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -74,22 +79,18 @@
             this.lblPlayTitle = new System.Windows.Forms.Label();
             this.txtPlayTitle = new System.Windows.Forms.TextBox();
             this.btnChangePerfomance = new System.Windows.Forms.Button();
+            this.tpTicketPriceChange = new System.Windows.Forms.TabPage();
+            this.lblTicketCurrency = new System.Windows.Forms.Label();
+            this.dataTicket = new System.Windows.Forms.DataGridView();
+            this.lblTicketPrice = new System.Windows.Forms.Label();
+            this.txtTicketPrice = new System.Windows.Forms.TextBox();
+            this.btnChangeTicketPrice = new System.Windows.Forms.Button();
+            this.cbPerfomance_ = new System.Windows.Forms.ComboBox();
+            this.lblPerfomance_ = new System.Windows.Forms.Label();
             this.tableAdapterManager = new Theatre.Продажа_билетов_в_театрDataSetTableAdapters.TableAdapterManager();
             this.тип_спектакляTableAdapter = new Theatre.Продажа_билетов_в_театрDataSetTableAdapters.Тип_спектакляTableAdapter();
-            this.PerfomanceId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Perfomance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PerfomanceDuration = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tpTicketPriceChange = new System.Windows.Forms.TabPage();
             this.билетBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.билетTableAdapter = new Theatre.Продажа_билетов_в_театрDataSetTableAdapters.БилетTableAdapter();
-            this.lblPerfomance_ = new System.Windows.Forms.Label();
-            this.cbPerfomance_ = new System.Windows.Forms.ComboBox();
-            this.btnChangeTicketPrice = new System.Windows.Forms.Button();
-            this.txtTicketPrice = new System.Windows.Forms.TextBox();
-            this.lblTicketPrice = new System.Windows.Forms.Label();
-            this.dataTicket = new System.Windows.Forms.DataGridView();
-            this.lblTicketCurrency = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.спектакльBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.продажа_билетов_в_театрDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.зрительBindingSource)).BeginInit();
@@ -97,14 +98,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.местоBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.единицаИзмеренияBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.физическоеЛицоBindingSource)).BeginInit();
-            this.tabControl.SuspendLayout();
+            this.tabTickets.SuspendLayout();
             this.tpTicketSelling.SuspendLayout();
             this.tpPerfomaceEdit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.спектакльDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.типСпектакляBindingSource)).BeginInit();
             this.tpTicketPriceChange.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.билетBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTicket)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.билетBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblperfomance
@@ -348,17 +349,17 @@
             // 
             this.единица_измеренияTableAdapter.ClearBeforeFill = true;
             // 
-            // tabControl
+            // tabTickets
             // 
-            this.tabControl.Controls.Add(this.tpTicketSelling);
-            this.tabControl.Controls.Add(this.tpPerfomaceEdit);
-            this.tabControl.Controls.Add(this.tpTicketPriceChange);
-            this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl.Location = new System.Drawing.Point(0, 0);
-            this.tabControl.Name = "tabControl";
-            this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(705, 404);
-            this.tabControl.TabIndex = 20;
+            this.tabTickets.Controls.Add(this.tpTicketSelling);
+            this.tabTickets.Controls.Add(this.tpPerfomaceEdit);
+            this.tabTickets.Controls.Add(this.tpTicketPriceChange);
+            this.tabTickets.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabTickets.Location = new System.Drawing.Point(0, 0);
+            this.tabTickets.Name = "tabTickets";
+            this.tabTickets.SelectedIndex = 0;
+            this.tabTickets.Size = new System.Drawing.Size(705, 404);
+            this.tabTickets.TabIndex = 20;
             // 
             // tpTicketSelling
             // 
@@ -432,6 +433,36 @@
             this.спектакльDataGridView.Size = new System.Drawing.Size(681, 108);
             this.спектакльDataGridView.TabIndex = 9;
             this.спектакльDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.спектакльDataGridView_CellClick);
+            // 
+            // PerfomanceId
+            // 
+            this.PerfomanceId.DataPropertyName = "Код спектакля";
+            this.PerfomanceId.HeaderText = "Код спектакля";
+            this.PerfomanceId.Name = "PerfomanceId";
+            this.PerfomanceId.ReadOnly = true;
+            this.PerfomanceId.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Код типа спектакля";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Код типа спектакля";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // Perfomance
+            // 
+            this.Perfomance.DataPropertyName = "Наименование";
+            this.Perfomance.HeaderText = "Спекталь";
+            this.Perfomance.Name = "Perfomance";
+            this.Perfomance.ReadOnly = true;
+            // 
+            // PerfomanceDuration
+            // 
+            this.PerfomanceDuration.DataPropertyName = "Продолжительность";
+            this.PerfomanceDuration.HeaderText = "Продолжительность";
+            this.PerfomanceDuration.Name = "PerfomanceDuration";
+            this.PerfomanceDuration.ReadOnly = true;
             // 
             // btnSavePerfomance
             // 
@@ -518,6 +549,98 @@
             this.btnChangePerfomance.UseVisualStyleBackColor = true;
             this.btnChangePerfomance.Click += new System.EventHandler(this.btnChangePerfomance_Click);
             // 
+            // tpTicketPriceChange
+            // 
+            this.tpTicketPriceChange.AutoScroll = true;
+            this.tpTicketPriceChange.Controls.Add(this.lblTicketCurrency);
+            this.tpTicketPriceChange.Controls.Add(this.dataTicket);
+            this.tpTicketPriceChange.Controls.Add(this.lblTicketPrice);
+            this.tpTicketPriceChange.Controls.Add(this.txtTicketPrice);
+            this.tpTicketPriceChange.Controls.Add(this.btnChangeTicketPrice);
+            this.tpTicketPriceChange.Controls.Add(this.cbPerfomance_);
+            this.tpTicketPriceChange.Controls.Add(this.lblPerfomance_);
+            this.tpTicketPriceChange.Location = new System.Drawing.Point(4, 22);
+            this.tpTicketPriceChange.Name = "tpTicketPriceChange";
+            this.tpTicketPriceChange.Padding = new System.Windows.Forms.Padding(3);
+            this.tpTicketPriceChange.Size = new System.Drawing.Size(697, 378);
+            this.tpTicketPriceChange.TabIndex = 2;
+            this.tpTicketPriceChange.Text = "Изменение цены билета";
+            this.tpTicketPriceChange.UseVisualStyleBackColor = true;
+            // 
+            // lblTicketCurrency
+            // 
+            this.lblTicketCurrency.AutoSize = true;
+            this.lblTicketCurrency.Location = new System.Drawing.Point(240, 304);
+            this.lblTicketCurrency.Name = "lblTicketCurrency";
+            this.lblTicketCurrency.Size = new System.Drawing.Size(45, 13);
+            this.lblTicketCurrency.TabIndex = 26;
+            this.lblTicketCurrency.Text = "Валюта";
+            // 
+            // dataTicket
+            // 
+            this.dataTicket.AllowUserToAddRows = false;
+            this.dataTicket.AllowUserToDeleteRows = false;
+            this.dataTicket.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataTicket.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dataTicket.BackgroundColor = System.Drawing.Color.White;
+            this.dataTicket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataTicket.Location = new System.Drawing.Point(11, 56);
+            this.dataTicket.Name = "dataTicket";
+            this.dataTicket.ReadOnly = true;
+            this.dataTicket.RowHeadersVisible = false;
+            this.dataTicket.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataTicket.Size = new System.Drawing.Size(664, 166);
+            this.dataTicket.TabIndex = 25;
+            this.dataTicket.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTicket_CellClick);
+            // 
+            // lblTicketPrice
+            // 
+            this.lblTicketPrice.AutoSize = true;
+            this.lblTicketPrice.Location = new System.Drawing.Point(17, 304);
+            this.lblTicketPrice.Name = "lblTicketPrice";
+            this.lblTicketPrice.Size = new System.Drawing.Size(71, 13);
+            this.lblTicketPrice.TabIndex = 23;
+            this.lblTicketPrice.Text = "Цена билета";
+            // 
+            // txtTicketPrice
+            // 
+            this.txtTicketPrice.Location = new System.Drawing.Point(118, 301);
+            this.txtTicketPrice.Name = "txtTicketPrice";
+            this.txtTicketPrice.Size = new System.Drawing.Size(100, 20);
+            this.txtTicketPrice.TabIndex = 22;
+            this.txtTicketPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnChangeTicketPrice
+            // 
+            this.btnChangeTicketPrice.Location = new System.Drawing.Point(510, 237);
+            this.btnChangeTicketPrice.Name = "btnChangeTicketPrice";
+            this.btnChangeTicketPrice.Size = new System.Drawing.Size(165, 41);
+            this.btnChangeTicketPrice.TabIndex = 21;
+            this.btnChangeTicketPrice.Text = "Изменить цену билета";
+            this.btnChangeTicketPrice.UseVisualStyleBackColor = true;
+            this.btnChangeTicketPrice.Click += new System.EventHandler(this.btnChangeTicketPrice_Click);
+            // 
+            // cbPerfomance_
+            // 
+            this.cbPerfomance_.DataSource = this.спектакльBindingSource;
+            this.cbPerfomance_.DisplayMember = "Наименование";
+            this.cbPerfomance_.FormattingEnabled = true;
+            this.cbPerfomance_.Location = new System.Drawing.Point(101, 20);
+            this.cbPerfomance_.Name = "cbPerfomance_";
+            this.cbPerfomance_.Size = new System.Drawing.Size(217, 21);
+            this.cbPerfomance_.TabIndex = 20;
+            this.cbPerfomance_.ValueMember = "Код спектакля";
+            this.cbPerfomance_.SelectedIndexChanged += new System.EventHandler(this.cbPerfomance__SelectedIndexChanged);
+            // 
+            // lblPerfomance_
+            // 
+            this.lblPerfomance_.AutoSize = true;
+            this.lblPerfomance_.Location = new System.Drawing.Point(8, 23);
+            this.lblPerfomance_.Name = "lblPerfomance_";
+            this.lblPerfomance_.Size = new System.Drawing.Size(61, 13);
+            this.lblPerfomance_.TabIndex = 19;
+            this.lblPerfomance_.Text = "Спектакль";
+            // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
@@ -540,54 +663,6 @@
             // 
             this.тип_спектакляTableAdapter.ClearBeforeFill = true;
             // 
-            // PerfomanceId
-            // 
-            this.PerfomanceId.DataPropertyName = "Код спектакля";
-            this.PerfomanceId.HeaderText = "Код спектакля";
-            this.PerfomanceId.Name = "PerfomanceId";
-            this.PerfomanceId.ReadOnly = true;
-            this.PerfomanceId.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Код типа спектакля";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Код типа спектакля";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Visible = false;
-            // 
-            // Perfomance
-            // 
-            this.Perfomance.DataPropertyName = "Наименование";
-            this.Perfomance.HeaderText = "Спекталь";
-            this.Perfomance.Name = "Perfomance";
-            this.Perfomance.ReadOnly = true;
-            // 
-            // PerfomanceDuration
-            // 
-            this.PerfomanceDuration.DataPropertyName = "Продолжительность";
-            this.PerfomanceDuration.HeaderText = "Продолжительность";
-            this.PerfomanceDuration.Name = "PerfomanceDuration";
-            this.PerfomanceDuration.ReadOnly = true;
-            // 
-            // tpTicketPriceChange
-            // 
-            this.tpTicketPriceChange.AutoScroll = true;
-            this.tpTicketPriceChange.Controls.Add(this.lblTicketCurrency);
-            this.tpTicketPriceChange.Controls.Add(this.dataTicket);
-            this.tpTicketPriceChange.Controls.Add(this.lblTicketPrice);
-            this.tpTicketPriceChange.Controls.Add(this.txtTicketPrice);
-            this.tpTicketPriceChange.Controls.Add(this.btnChangeTicketPrice);
-            this.tpTicketPriceChange.Controls.Add(this.cbPerfomance_);
-            this.tpTicketPriceChange.Controls.Add(this.lblPerfomance_);
-            this.tpTicketPriceChange.Location = new System.Drawing.Point(4, 22);
-            this.tpTicketPriceChange.Name = "tpTicketPriceChange";
-            this.tpTicketPriceChange.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTicketPriceChange.Size = new System.Drawing.Size(697, 378);
-            this.tpTicketPriceChange.TabIndex = 2;
-            this.tpTicketPriceChange.Text = "Изменение цены билета";
-            this.tpTicketPriceChange.UseVisualStyleBackColor = true;
-            // 
             // билетBindingSource
             // 
             this.билетBindingSource.DataMember = "Билет";
@@ -597,89 +672,20 @@
             // 
             this.билетTableAdapter.ClearBeforeFill = true;
             // 
-            // lblPerfomance_
-            // 
-            this.lblPerfomance_.AutoSize = true;
-            this.lblPerfomance_.Location = new System.Drawing.Point(8, 23);
-            this.lblPerfomance_.Name = "lblPerfomance_";
-            this.lblPerfomance_.Size = new System.Drawing.Size(61, 13);
-            this.lblPerfomance_.TabIndex = 19;
-            this.lblPerfomance_.Text = "Спектакль";
-            // 
-            // cbPerfomance_
-            // 
-            this.cbPerfomance_.DataSource = this.спектакльBindingSource;
-            this.cbPerfomance_.DisplayMember = "Наименование";
-            this.cbPerfomance_.FormattingEnabled = true;
-            this.cbPerfomance_.Location = new System.Drawing.Point(101, 20);
-            this.cbPerfomance_.Name = "cbPerfomance_";
-            this.cbPerfomance_.Size = new System.Drawing.Size(217, 21);
-            this.cbPerfomance_.TabIndex = 20;
-            this.cbPerfomance_.ValueMember = "Код спектакля";
-            this.cbPerfomance_.SelectedIndexChanged += new System.EventHandler(this.cbPerfomance__SelectedIndexChanged);
-            // 
-            // btnChangeTicketPrice
-            // 
-            this.btnChangeTicketPrice.Location = new System.Drawing.Point(510, 237);
-            this.btnChangeTicketPrice.Name = "btnChangeTicketPrice";
-            this.btnChangeTicketPrice.Size = new System.Drawing.Size(165, 41);
-            this.btnChangeTicketPrice.TabIndex = 21;
-            this.btnChangeTicketPrice.Text = "Изменить цену билета";
-            this.btnChangeTicketPrice.UseVisualStyleBackColor = true;
-            this.btnChangeTicketPrice.Click += new System.EventHandler(this.btnChangeTicketPrice_Click);
-            // 
-            // txtTicketPrice
-            // 
-            this.txtTicketPrice.Location = new System.Drawing.Point(118, 301);
-            this.txtTicketPrice.Name = "txtTicketPrice";
-            this.txtTicketPrice.Size = new System.Drawing.Size(100, 20);
-            this.txtTicketPrice.TabIndex = 22;
-            this.txtTicketPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // lblTicketPrice
-            // 
-            this.lblTicketPrice.AutoSize = true;
-            this.lblTicketPrice.Location = new System.Drawing.Point(17, 304);
-            this.lblTicketPrice.Name = "lblTicketPrice";
-            this.lblTicketPrice.Size = new System.Drawing.Size(71, 13);
-            this.lblTicketPrice.TabIndex = 23;
-            this.lblTicketPrice.Text = "Цена билета";
-            // 
-            // dataTicket
-            // 
-            this.dataTicket.AllowUserToAddRows = false;
-            this.dataTicket.AllowUserToDeleteRows = false;
-            this.dataTicket.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataTicket.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dataTicket.BackgroundColor = System.Drawing.Color.White;
-            this.dataTicket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataTicket.Location = new System.Drawing.Point(11, 56);
-            this.dataTicket.Name = "dataTicket";
-            this.dataTicket.ReadOnly = true;
-            this.dataTicket.RowHeadersVisible = false;
-            this.dataTicket.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataTicket.Size = new System.Drawing.Size(664, 166);
-            this.dataTicket.TabIndex = 25;
-            this.dataTicket.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTicket_CellClick);
-            // 
-            // lblTicketCurrency
-            // 
-            this.lblTicketCurrency.AutoSize = true;
-            this.lblTicketCurrency.Location = new System.Drawing.Point(240, 304);
-            this.lblTicketCurrency.Name = "lblTicketCurrency";
-            this.lblTicketCurrency.Size = new System.Drawing.Size(45, 13);
-            this.lblTicketCurrency.TabIndex = 26;
-            this.lblTicketCurrency.Text = "Валюта";
-            // 
-            // Form1
+            // FormTickets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(705, 404);
-            this.Controls.Add(this.tabControl);
-            this.Name = "Form1";
+            this.Controls.Add(this.tabTickets);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FormTickets";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Продажа билетов в кинотеатр";
+            this.Text = "Продажа билетов в театр";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.спектакльBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.продажа_билетов_в_театрDataSet)).EndInit();
@@ -688,7 +694,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.местоBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.единицаИзмеренияBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.физическоеЛицоBindingSource)).EndInit();
-            this.tabControl.ResumeLayout(false);
+            this.tabTickets.ResumeLayout(false);
             this.tpTicketSelling.ResumeLayout(false);
             this.tpTicketSelling.PerformLayout();
             this.tpPerfomaceEdit.ResumeLayout(false);
@@ -697,8 +703,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.типСпектакляBindingSource)).EndInit();
             this.tpTicketPriceChange.ResumeLayout(false);
             this.tpTicketPriceChange.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.билетBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTicket)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.билетBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -737,7 +743,7 @@
         private Продажа_билетов_в_театрDataSetTableAdapters.МестоTableAdapter местоTableAdapter;
         private System.Windows.Forms.BindingSource единицаИзмеренияBindingSource;
         private Продажа_билетов_в_театрDataSetTableAdapters.Единица_измеренияTableAdapter единица_измеренияTableAdapter;
-        private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.TabControl tabTickets;
         private System.Windows.Forms.TabPage tpTicketSelling;
         private System.Windows.Forms.TabPage tpPerfomaceEdit;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;

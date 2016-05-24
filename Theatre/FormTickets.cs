@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace Theatre
 {
-    public partial class Form1 : Form
+    public partial class FormTickets : Form
     {
 
         private SqlServer _sqlServer;
@@ -11,7 +11,7 @@ namespace Theatre
         private int ticketId; // номер (id) билета
 
 
-        public Form1()
+        public FormTickets()
         {
             InitializeComponent();
 
