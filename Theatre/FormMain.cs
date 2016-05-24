@@ -50,10 +50,8 @@ namespace Theatre
             var listVisibleForms = GetVisibleForms();
             foreach (var visibleForm in listVisibleForms.Where(visibleForm => visibleForm.Name != Name))
                 visibleForm.Close();
-            _formConnection.SqlServer=null;
-            lblStatusConnection.Text = lblStatusConnection.Tag.ToString();
-            lblUser.Visible = false;
-
+            _formConnection.SqlServer = null;
+            SetInitialSettings();
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -67,10 +65,55 @@ namespace Theatre
                 lblUser.Visible = true;
                 lblUser.Text = DataConnection.User;
                 lblUser.ToolTipText = DataConnection.UserType;
+                menuDataBaseConnect.Enabled = false;
+                menuDataBaseDisconnect.Enabled = true;
+
+                Roles();
+
             }
         }
 
 
+        private void SetInitialSettings()
+        {
+            lblStatusConnection.Text = lblStatusConnection.Tag.ToString();
+            lblUser.Visible = false;
+            menuDataBaseConnect.Enabled = true;
+            menuDataBaseDisconnect.Enabled = false;
+
+            menuDataBaseActions.Visible =
+                  menuDataBaseActionsView.Visible =
+                  menuDataBaseActionsTickets.Visible =
+                  menuDataBaseActionsReports.Visible =
+                  menuSecurity.Visible = false;
+        }
+
+
+        private void Roles()
+        {
+            switch (DataConnection.UserType)
+            {
+                case "Гость":
+                    menuDataBaseActions.Visible =
+                        menuDataBaseActionsView.Visible = true;
+                    break;
+
+                case "Кассир":
+                    menuDataBaseActions.Visible =
+                        menuDataBaseActionsView.Visible =
+                            menuDataBaseActionsTickets.Visible =
+                                menuDataBaseActionsReports.Visible = true;
+                    break;
+
+                case "Администратор":
+                    menuDataBaseActions.Visible =
+                        menuDataBaseActionsView.Visible =
+                            menuDataBaseActionsTickets.Visible =
+                                menuDataBaseActionsReports.Visible =
+                                    menuSecurity.Visible = true;
+                    break;
+            }
+        }
 
         #region Открытие дополнительных (дочерних) MDI-окон
 

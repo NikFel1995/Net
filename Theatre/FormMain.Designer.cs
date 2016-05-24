@@ -80,6 +80,7 @@
             // 
             // menuDataBaseDisconnect
             // 
+            this.menuDataBaseDisconnect.Enabled = false;
             this.menuDataBaseDisconnect.Name = "menuDataBaseDisconnect";
             this.menuDataBaseDisconnect.Size = new System.Drawing.Size(156, 22);
             this.menuDataBaseDisconnect.Text = "Отключиться";
@@ -94,12 +95,14 @@
             this.menuDataBaseActions.Name = "menuDataBaseActions";
             this.menuDataBaseActions.Size = new System.Drawing.Size(97, 20);
             this.menuDataBaseActions.Text = "Действия с БД";
+            this.menuDataBaseActions.Visible = false;
             // 
             // menuDataBaseActionsView
             // 
             this.menuDataBaseActionsView.Name = "menuDataBaseActionsView";
             this.menuDataBaseActionsView.Size = new System.Drawing.Size(255, 22);
             this.menuDataBaseActionsView.Text = "Просмотр данных";
+            this.menuDataBaseActionsView.Visible = false;
             this.menuDataBaseActionsView.Click += new System.EventHandler(this.menuDataBaseActionsView_Click);
             // 
             // menuDataBaseActionsTickets
@@ -107,6 +110,7 @@
             this.menuDataBaseActionsTickets.Name = "menuDataBaseActionsTickets";
             this.menuDataBaseActionsTickets.Size = new System.Drawing.Size(255, 22);
             this.menuDataBaseActionsTickets.Text = "Управление продажами билетов";
+            this.menuDataBaseActionsTickets.Visible = false;
             this.menuDataBaseActionsTickets.Click += new System.EventHandler(this.menuDataBaseActionsTickets_Click);
             // 
             // menuDataBaseActionsReports
@@ -114,6 +118,7 @@
             this.menuDataBaseActionsReports.Name = "menuDataBaseActionsReports";
             this.menuDataBaseActionsReports.Size = new System.Drawing.Size(255, 22);
             this.menuDataBaseActionsReports.Text = "Сформировать отчеты";
+            this.menuDataBaseActionsReports.Visible = false;
             this.menuDataBaseActionsReports.Click += new System.EventHandler(this.menuDataBaseActionsReports_Click);
             // 
             // menuSecurity
@@ -121,6 +126,7 @@
             this.menuSecurity.Name = "menuSecurity";
             this.menuSecurity.Size = new System.Drawing.Size(94, 20);
             this.menuSecurity.Text = "Безопасность";
+            this.menuSecurity.Visible = false;
             this.menuSecurity.Click += new System.EventHandler(this.menuSecurity_Click);
             // 
             // menuAbout
@@ -146,7 +152,7 @@
             // lblStatusConnection
             // 
             this.lblStatusConnection.Name = "lblStatusConnection";
-            this.lblStatusConnection.Size = new System.Drawing.Size(540, 17);
+            this.lblStatusConnection.Size = new System.Drawing.Size(658, 17);
             this.lblStatusConnection.Spring = true;
             this.lblStatusConnection.Tag = "Не подключено";
             this.lblStatusConnection.Text = "Не подключено";

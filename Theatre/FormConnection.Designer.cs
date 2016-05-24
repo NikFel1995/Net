@@ -60,15 +60,17 @@
             this.txtIp.TabIndex = 1;
             this.txtIp.Text = "127.0.0.1";
             this.txtIp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIp_KeyPress);
             // 
             // txtPort
             // 
             this.txtPort.Location = new System.Drawing.Point(362, 37);
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(100, 20);
-            this.txtPort.TabIndex = 3;
+            this.txtPort.TabIndex = 2;
             this.txtPort.Text = "1433";
             this.txtPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPort.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPort_KeyPress);
             // 
             // lblPort
             // 
@@ -83,8 +85,9 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(362, 125);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(117, 20);
-            this.txtPassword.TabIndex = 7;
+            this.txtPassword.TabIndex = 5;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblPassword
@@ -101,7 +104,7 @@
             this.txtUser.Location = new System.Drawing.Point(145, 125);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(117, 20);
-            this.txtUser.TabIndex = 5;
+            this.txtUser.TabIndex = 4;
             this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblUser
@@ -132,14 +135,14 @@
             this.comboUserType.Location = new System.Drawing.Point(262, 89);
             this.comboUserType.Name = "comboUserType";
             this.comboUserType.Size = new System.Drawing.Size(121, 21);
-            this.comboUserType.TabIndex = 9;
+            this.comboUserType.TabIndex = 3;
             // 
             // btnConnect
             // 
             this.btnConnect.Location = new System.Drawing.Point(237, 164);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(114, 38);
-            this.btnConnect.TabIndex = 10;
+            this.btnConnect.TabIndex = 6;
             this.btnConnect.Text = "Подключиться";
             this.btnConnect.UseVisualStyleBackColor = true;
             this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
@@ -150,7 +153,7 @@
             this.lblGuest.Location = new System.Drawing.Point(447, 221);
             this.lblGuest.Name = "lblGuest";
             this.lblGuest.Size = new System.Drawing.Size(90, 13);
-            this.lblGuest.TabIndex = 11;
+            this.lblGuest.TabIndex = 7;
             this.lblGuest.TabStop = true;
             this.lblGuest.Text = "Войти как Гость";
             this.lblGuest.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblGuest_LinkClicked);
