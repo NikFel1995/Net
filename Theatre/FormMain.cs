@@ -96,6 +96,7 @@ namespace Theatre
                 case "Гость":
                     menuDataBaseActions.Visible =
                         menuDataBaseActionsView.Visible = true;
+                   menuSecurity.Visible= menuDataBaseActionsTickets.Visible = menuDataBaseActionsReports.Visible = false;
                     break;
 
                 case "Кассир":
@@ -110,8 +111,8 @@ namespace Theatre
                         menuDataBaseActionsView.Visible =
                             menuDataBaseActionsTickets.Visible =
                                 menuDataBaseActionsReports.Visible =
-                                    menuSecurity.Visible = true;
-                    break;
+                                    menuSecurity.Visible = true; break;
+               
             }
         }
 
@@ -174,5 +175,16 @@ namespace Theatre
         }
 
         #endregion
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            if (_formConnection == null || _formConnection.IsDisposed)
+            {
+                _formConnection = new FormConnection { MdiParent = this };
+                _formConnection.Show();
+            }
+            else
+                _formConnection.Activate();
+        }
     }
 }

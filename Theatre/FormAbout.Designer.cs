@@ -32,17 +32,17 @@
             this.pic = new System.Windows.Forms.PictureBox();
             this.txtInfoProduct = new System.Windows.Forms.TextBox();
             this.txtAuthor = new System.Windows.Forms.TextBox();
-            this.txtCopyright = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             this.SuspendLayout();
             // 
             // pic
             // 
+            this.pic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pic.BackgroundImage")));
+            this.pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pic.Image = global::Theatre.Properties.Resources.pic01;
             this.pic.Location = new System.Drawing.Point(0, 0);
             this.pic.Name = "pic";
-            this.pic.Size = new System.Drawing.Size(562, 330);
+            this.pic.Size = new System.Drawing.Size(449, 330);
             this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic.TabIndex = 0;
             this.pic.TabStop = false;
@@ -51,24 +51,28 @@
             // 
             this.txtInfoProduct.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtInfoProduct.BackColor = System.Drawing.Color.Maroon;
-            this.txtInfoProduct.ForeColor = System.Drawing.Color.Yellow;
-            this.txtInfoProduct.Location = new System.Drawing.Point(12, 12);
+            this.txtInfoProduct.BackColor = System.Drawing.Color.White;
+            this.txtInfoProduct.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtInfoProduct.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtInfoProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtInfoProduct.Location = new System.Drawing.Point(131, 201);
             this.txtInfoProduct.Multiline = true;
             this.txtInfoProduct.Name = "txtInfoProduct";
             this.txtInfoProduct.ReadOnly = true;
-            this.txtInfoProduct.Size = new System.Drawing.Size(538, 66);
+            this.txtInfoProduct.Size = new System.Drawing.Size(193, 66);
             this.txtInfoProduct.TabIndex = 1;
             this.txtInfoProduct.TabStop = false;
-            this.txtInfoProduct.Text = resources.GetString("txtInfoProduct.Text");
+            this.txtInfoProduct.Text = "Программная система \r\n\"Продажа билетов в театр\"\r\n\r\n";
             this.txtInfoProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtAuthor
             // 
             this.txtAuthor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAuthor.BackColor = System.Drawing.Color.Maroon;
-            this.txtAuthor.ForeColor = System.Drawing.Color.Yellow;
-            this.txtAuthor.Location = new System.Drawing.Point(267, 274);
+            this.txtAuthor.BackColor = System.Drawing.Color.White;
+            this.txtAuthor.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAuthor.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAuthor.Location = new System.Drawing.Point(142, 262);
             this.txtAuthor.Multiline = true;
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.ReadOnly = true;
@@ -79,27 +83,11 @@
     "тики и информационных технологий";
             this.txtAuthor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtCopyright
-            // 
-            this.txtCopyright.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtCopyright.BackColor = System.Drawing.Color.Maroon;
-            this.txtCopyright.ForeColor = System.Drawing.Color.Yellow;
-            this.txtCopyright.Location = new System.Drawing.Point(0, 273);
-            this.txtCopyright.Multiline = true;
-            this.txtCopyright.Name = "txtCopyright";
-            this.txtCopyright.ReadOnly = true;
-            this.txtCopyright.Size = new System.Drawing.Size(261, 56);
-            this.txtCopyright.TabIndex = 3;
-            this.txtCopyright.TabStop = false;
-            this.txtCopyright.Text = "Версия: 1.0.0\r\nCopyright © Анастастасия 2016 Все права защищены.";
-            this.txtCopyright.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // FormAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 330);
-            this.Controls.Add(this.txtCopyright);
+            this.ClientSize = new System.Drawing.Size(449, 330);
             this.Controls.Add(this.txtAuthor);
             this.Controls.Add(this.txtInfoProduct);
             this.Controls.Add(this.pic);
@@ -122,6 +110,5 @@
         private System.Windows.Forms.PictureBox pic;
         private System.Windows.Forms.TextBox txtInfoProduct;
         private System.Windows.Forms.TextBox txtAuthor;
-        private System.Windows.Forms.TextBox txtCopyright;
     }
 }

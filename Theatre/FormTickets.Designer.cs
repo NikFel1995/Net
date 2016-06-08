@@ -47,7 +47,6 @@
             this.lblCurrency = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.txtPrice = new System.Windows.Forms.TextBox();
-            this.txtDateOfPerformance = new System.Windows.Forms.TextBox();
             this.lblDateOfPerformance = new System.Windows.Forms.Label();
             this.txtPlayTime = new System.Windows.Forms.TextBox();
             this.lblPlayTime = new System.Windows.Forms.Label();
@@ -64,6 +63,7 @@
             this.единица_измеренияTableAdapter = new Theatre.Продажа_билетов_в_театрDataSetTableAdapters.Единица_измеренияTableAdapter();
             this.tabTickets = new System.Windows.Forms.TabControl();
             this.tpTicketSelling = new System.Windows.Forms.TabPage();
+            this.txtDateOfPerformance = new System.Windows.Forms.TextBox();
             this.tpPerfomaceEdit = new System.Windows.Forms.TabPage();
             this.спектакльDataGridView = new System.Windows.Forms.DataGridView();
             this.PerfomanceId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -111,9 +111,10 @@
             // lblperfomance
             // 
             this.lblperfomance.AutoSize = true;
-            this.lblperfomance.Location = new System.Drawing.Point(17, 13);
+            this.lblperfomance.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblperfomance.Location = new System.Drawing.Point(20, 16);
             this.lblperfomance.Name = "lblperfomance";
-            this.lblperfomance.Size = new System.Drawing.Size(61, 13);
+            this.lblperfomance.Size = new System.Drawing.Size(65, 15);
             this.lblperfomance.TabIndex = 0;
             this.lblperfomance.Text = "Спектакль";
             // 
@@ -121,10 +122,12 @@
             // 
             this.cbPerfomance.DataSource = this.спектакльBindingSource;
             this.cbPerfomance.DisplayMember = "Наименование";
+            this.cbPerfomance.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbPerfomance.FormattingEnabled = true;
-            this.cbPerfomance.Location = new System.Drawing.Point(125, 13);
+            this.cbPerfomance.Location = new System.Drawing.Point(146, 16);
+            this.cbPerfomance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbPerfomance.Name = "cbPerfomance";
-            this.cbPerfomance.Size = new System.Drawing.Size(157, 21);
+            this.cbPerfomance.Size = new System.Drawing.Size(182, 23);
             this.cbPerfomance.TabIndex = 1;
             this.cbPerfomance.ValueMember = "Код спектакля";
             // 
@@ -142,10 +145,12 @@
             // 
             this.cbSpectator.DataSource = this.зрительBindingSource;
             this.cbSpectator.DisplayMember = "Фамилия";
+            this.cbSpectator.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbSpectator.FormattingEnabled = true;
-            this.cbSpectator.Location = new System.Drawing.Point(125, 53);
+            this.cbSpectator.Location = new System.Drawing.Point(146, 65);
+            this.cbSpectator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbSpectator.Name = "cbSpectator";
-            this.cbSpectator.Size = new System.Drawing.Size(157, 21);
+            this.cbSpectator.Size = new System.Drawing.Size(182, 23);
             this.cbSpectator.TabIndex = 3;
             this.cbSpectator.ValueMember = "Код зрителя";
             // 
@@ -157,9 +162,10 @@
             // lblSpectator
             // 
             this.lblSpectator.AutoSize = true;
-            this.lblSpectator.Location = new System.Drawing.Point(17, 53);
+            this.lblSpectator.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblSpectator.Location = new System.Drawing.Point(20, 65);
             this.lblSpectator.Name = "lblSpectator";
-            this.lblSpectator.Size = new System.Drawing.Size(49, 13);
+            this.lblSpectator.Size = new System.Drawing.Size(50, 15);
             this.lblSpectator.TabIndex = 2;
             this.lblSpectator.Text = "Зритель";
             // 
@@ -171,9 +177,10 @@
             // lblCashier
             // 
             this.lblCashier.AutoSize = true;
-            this.lblCashier.Location = new System.Drawing.Point(17, 90);
+            this.lblCashier.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCashier.Location = new System.Drawing.Point(20, 111);
             this.lblCashier.Name = "lblCashier";
-            this.lblCashier.Size = new System.Drawing.Size(44, 13);
+            this.lblCashier.Size = new System.Drawing.Size(50, 15);
             this.lblCashier.TabIndex = 4;
             this.lblCashier.Text = "Кассир";
             // 
@@ -181,10 +188,12 @@
             // 
             this.cbPlace.DataSource = this.местоBindingSource;
             this.cbPlace.DisplayMember = "Номер места";
+            this.cbPlace.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbPlace.FormattingEnabled = true;
-            this.cbPlace.Location = new System.Drawing.Point(125, 127);
+            this.cbPlace.Location = new System.Drawing.Point(146, 156);
+            this.cbPlace.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbPlace.Name = "cbPlace";
-            this.cbPlace.Size = new System.Drawing.Size(157, 21);
+            this.cbPlace.Size = new System.Drawing.Size(182, 23);
             this.cbPlace.TabIndex = 7;
             this.cbPlace.ValueMember = "Код места";
             // 
@@ -196,9 +205,10 @@
             // lblPlace
             // 
             this.lblPlace.AutoSize = true;
-            this.lblPlace.Location = new System.Drawing.Point(17, 130);
+            this.lblPlace.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPlace.Location = new System.Drawing.Point(20, 160);
             this.lblPlace.Name = "lblPlace";
-            this.lblPlace.Size = new System.Drawing.Size(39, 13);
+            this.lblPlace.Size = new System.Drawing.Size(42, 15);
             this.lblPlace.TabIndex = 6;
             this.lblPlace.Text = "Место";
             // 
@@ -206,10 +216,12 @@
             // 
             this.cbCurrency.DataSource = this.единицаИзмеренияBindingSource;
             this.cbCurrency.DisplayMember = "Наименование";
+            this.cbCurrency.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbCurrency.FormattingEnabled = true;
-            this.cbCurrency.Location = new System.Drawing.Point(125, 166);
+            this.cbCurrency.Location = new System.Drawing.Point(146, 204);
+            this.cbCurrency.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbCurrency.Name = "cbCurrency";
-            this.cbCurrency.Size = new System.Drawing.Size(157, 21);
+            this.cbCurrency.Size = new System.Drawing.Size(182, 23);
             this.cbCurrency.TabIndex = 9;
             this.cbCurrency.ValueMember = "Код единицы измерения";
             // 
@@ -221,53 +233,51 @@
             // lblCurrency
             // 
             this.lblCurrency.AutoSize = true;
-            this.lblCurrency.Location = new System.Drawing.Point(17, 169);
+            this.lblCurrency.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCurrency.Location = new System.Drawing.Point(20, 208);
             this.lblCurrency.Name = "lblCurrency";
-            this.lblCurrency.Size = new System.Drawing.Size(45, 13);
+            this.lblCurrency.Size = new System.Drawing.Size(48, 15);
             this.lblCurrency.TabIndex = 8;
             this.lblCurrency.Text = "Валюта";
             // 
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(17, 200);
+            this.lblPrice.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPrice.Location = new System.Drawing.Point(20, 246);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(33, 13);
+            this.lblPrice.Size = new System.Drawing.Size(36, 15);
             this.lblPrice.TabIndex = 10;
             this.lblPrice.Text = "Цена";
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(157, 197);
+            this.txtPrice.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtPrice.Location = new System.Drawing.Point(183, 242);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(125, 20);
+            this.txtPrice.Size = new System.Drawing.Size(145, 21);
             this.txtPrice.TabIndex = 11;
             this.txtPrice.Text = "5000";
             this.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtDateOfPerformance
-            // 
-            this.txtDateOfPerformance.Location = new System.Drawing.Point(157, 223);
-            this.txtDateOfPerformance.Name = "txtDateOfPerformance";
-            this.txtDateOfPerformance.Size = new System.Drawing.Size(125, 20);
-            this.txtDateOfPerformance.TabIndex = 13;
-            this.txtDateOfPerformance.Text = "23-05-2016";
-            this.txtDateOfPerformance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // lblDateOfPerformance
             // 
             this.lblDateOfPerformance.AutoSize = true;
-            this.lblDateOfPerformance.Location = new System.Drawing.Point(17, 230);
+            this.lblDateOfPerformance.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblDateOfPerformance.Location = new System.Drawing.Point(20, 283);
             this.lblDateOfPerformance.Name = "lblDateOfPerformance";
-            this.lblDateOfPerformance.Size = new System.Drawing.Size(89, 13);
+            this.lblDateOfPerformance.Size = new System.Drawing.Size(94, 15);
             this.lblDateOfPerformance.TabIndex = 12;
             this.lblDateOfPerformance.Text = "Дата спектакля";
             // 
             // txtPlayTime
             // 
-            this.txtPlayTime.Location = new System.Drawing.Point(157, 249);
+            this.txtPlayTime.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtPlayTime.Location = new System.Drawing.Point(183, 306);
+            this.txtPlayTime.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPlayTime.Name = "txtPlayTime";
-            this.txtPlayTime.Size = new System.Drawing.Size(125, 20);
+            this.txtPlayTime.Size = new System.Drawing.Size(145, 21);
             this.txtPlayTime.TabIndex = 15;
             this.txtPlayTime.Text = "10:00:00";
             this.txtPlayTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -275,27 +285,31 @@
             // lblPlayTime
             // 
             this.lblPlayTime.AutoSize = true;
-            this.lblPlayTime.Location = new System.Drawing.Point(17, 256);
+            this.lblPlayTime.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPlayTime.Location = new System.Drawing.Point(20, 315);
             this.lblPlayTime.Name = "lblPlayTime";
-            this.lblPlayTime.Size = new System.Drawing.Size(134, 13);
+            this.lblPlayTime.Size = new System.Drawing.Size(146, 15);
             this.lblPlayTime.TabIndex = 14;
             this.lblPlayTime.Text = "Время начала спектакля";
             // 
             // txtDateOfTicketSales
             // 
-            this.txtDateOfTicketSales.Location = new System.Drawing.Point(157, 275);
+            this.txtDateOfTicketSales.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtDateOfTicketSales.Location = new System.Drawing.Point(183, 338);
+            this.txtDateOfTicketSales.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDateOfTicketSales.Name = "txtDateOfTicketSales";
-            this.txtDateOfTicketSales.Size = new System.Drawing.Size(125, 20);
+            this.txtDateOfTicketSales.Size = new System.Drawing.Size(145, 21);
             this.txtDateOfTicketSales.TabIndex = 17;
-            this.txtDateOfTicketSales.Text = "20-05-2016";
+            this.txtDateOfTicketSales.Text = "2016-05-01";
             this.txtDateOfTicketSales.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblDateOfTicketSales
             // 
             this.lblDateOfTicketSales.AutoSize = true;
-            this.lblDateOfTicketSales.Location = new System.Drawing.Point(17, 282);
+            this.lblDateOfTicketSales.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblDateOfTicketSales.Location = new System.Drawing.Point(20, 347);
             this.lblDateOfTicketSales.Name = "lblDateOfTicketSales";
-            this.lblDateOfTicketSales.Size = new System.Drawing.Size(118, 13);
+            this.lblDateOfTicketSales.Size = new System.Drawing.Size(132, 15);
             this.lblDateOfTicketSales.TabIndex = 16;
             this.lblDateOfTicketSales.Text = "Дата продажи билета";
             // 
@@ -305,9 +319,10 @@
             // 
             // btnAddRecord
             // 
-            this.btnAddRecord.Location = new System.Drawing.Point(567, 333);
+            this.btnAddRecord.Location = new System.Drawing.Point(661, 410);
+            this.btnAddRecord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddRecord.Name = "btnAddRecord";
-            this.btnAddRecord.Size = new System.Drawing.Size(102, 37);
+            this.btnAddRecord.Size = new System.Drawing.Size(119, 46);
             this.btnAddRecord.TabIndex = 18;
             this.btnAddRecord.Text = "Добавить";
             this.btnAddRecord.UseVisualStyleBackColor = true;
@@ -325,10 +340,12 @@
             // 
             this.cbCashier.DataSource = this.физическоеЛицоBindingSource;
             this.cbCashier.DisplayMember = "Фамилия";
+            this.cbCashier.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbCashier.FormattingEnabled = true;
-            this.cbCashier.Location = new System.Drawing.Point(125, 87);
+            this.cbCashier.Location = new System.Drawing.Point(146, 107);
+            this.cbCashier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbCashier.Name = "cbCashier";
-            this.cbCashier.Size = new System.Drawing.Size(157, 21);
+            this.cbCashier.Size = new System.Drawing.Size(182, 23);
             this.cbCashier.TabIndex = 19;
             this.cbCashier.ValueMember = "Код физического лица";
             // 
@@ -356,9 +373,10 @@
             this.tabTickets.Controls.Add(this.tpTicketPriceChange);
             this.tabTickets.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabTickets.Location = new System.Drawing.Point(0, 0);
+            this.tabTickets.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabTickets.Name = "tabTickets";
             this.tabTickets.SelectedIndex = 0;
-            this.tabTickets.Size = new System.Drawing.Size(705, 404);
+            this.tabTickets.Size = new System.Drawing.Size(822, 497);
             this.tabTickets.TabIndex = 20;
             // 
             // tpTicketSelling
@@ -382,13 +400,25 @@
             this.tpTicketSelling.Controls.Add(this.cbPlace);
             this.tpTicketSelling.Controls.Add(this.lblPrice);
             this.tpTicketSelling.Controls.Add(this.lblCurrency);
-            this.tpTicketSelling.Location = new System.Drawing.Point(4, 22);
+            this.tpTicketSelling.Location = new System.Drawing.Point(4, 25);
+            this.tpTicketSelling.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpTicketSelling.Name = "tpTicketSelling";
-            this.tpTicketSelling.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTicketSelling.Size = new System.Drawing.Size(697, 378);
+            this.tpTicketSelling.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpTicketSelling.Size = new System.Drawing.Size(814, 468);
             this.tpTicketSelling.TabIndex = 0;
             this.tpTicketSelling.Text = "Продажа билетов";
             this.tpTicketSelling.UseVisualStyleBackColor = true;
+            // 
+            // txtDateOfPerformance
+            // 
+            this.txtDateOfPerformance.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtDateOfPerformance.Location = new System.Drawing.Point(183, 274);
+            this.txtDateOfPerformance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDateOfPerformance.Name = "txtDateOfPerformance";
+            this.txtDateOfPerformance.Size = new System.Drawing.Size(145, 21);
+            this.txtDateOfPerformance.TabIndex = 13;
+            this.txtDateOfPerformance.Text = "2016-05-02";
+            this.txtDateOfPerformance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tpPerfomaceEdit
             // 
@@ -402,10 +432,11 @@
             this.tpPerfomaceEdit.Controls.Add(this.lblPlayTitle);
             this.tpPerfomaceEdit.Controls.Add(this.txtPlayTitle);
             this.tpPerfomaceEdit.Controls.Add(this.btnChangePerfomance);
-            this.tpPerfomaceEdit.Location = new System.Drawing.Point(4, 22);
+            this.tpPerfomaceEdit.Location = new System.Drawing.Point(4, 25);
+            this.tpPerfomaceEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpPerfomaceEdit.Name = "tpPerfomaceEdit";
-            this.tpPerfomaceEdit.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPerfomaceEdit.Size = new System.Drawing.Size(697, 378);
+            this.tpPerfomaceEdit.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpPerfomaceEdit.Size = new System.Drawing.Size(814, 468);
             this.tpPerfomaceEdit.TabIndex = 1;
             this.tpPerfomaceEdit.Text = "Изменение данных о спектакле";
             this.tpPerfomaceEdit.UseVisualStyleBackColor = true;
@@ -425,12 +456,13 @@
             this.Perfomance,
             this.PerfomanceDuration});
             this.спектакльDataGridView.DataSource = this.спектакльBindingSource;
-            this.спектакльDataGridView.Location = new System.Drawing.Point(8, 6);
+            this.спектакльDataGridView.Location = new System.Drawing.Point(9, 7);
+            this.спектакльDataGridView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.спектакльDataGridView.Name = "спектакльDataGridView";
             this.спектакльDataGridView.ReadOnly = true;
             this.спектакльDataGridView.RowHeadersVisible = false;
             this.спектакльDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.спектакльDataGridView.Size = new System.Drawing.Size(681, 108);
+            this.спектакльDataGridView.Size = new System.Drawing.Size(794, 133);
             this.спектакльDataGridView.TabIndex = 9;
             this.спектакльDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.спектакльDataGridView_CellClick);
             // 
@@ -466,9 +498,10 @@
             // 
             // btnSavePerfomance
             // 
-            this.btnSavePerfomance.Location = new System.Drawing.Point(34, 277);
+            this.btnSavePerfomance.Location = new System.Drawing.Point(40, 341);
+            this.btnSavePerfomance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSavePerfomance.Name = "btnSavePerfomance";
-            this.btnSavePerfomance.Size = new System.Drawing.Size(132, 31);
+            this.btnSavePerfomance.Size = new System.Drawing.Size(154, 38);
             this.btnSavePerfomance.TabIndex = 9;
             this.btnSavePerfomance.Text = "Сохранить";
             this.btnSavePerfomance.UseVisualStyleBackColor = true;
@@ -479,10 +512,12 @@
             // 
             this.cbPlayType.DataSource = this.типСпектакляBindingSource;
             this.cbPlayType.DisplayMember = "Наименование";
+            this.cbPlayType.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbPlayType.FormattingEnabled = true;
-            this.cbPlayType.Location = new System.Drawing.Point(142, 191);
+            this.cbPlayType.Location = new System.Drawing.Point(166, 235);
+            this.cbPlayType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbPlayType.Name = "cbPlayType";
-            this.cbPlayType.Size = new System.Drawing.Size(163, 21);
+            this.cbPlayType.Size = new System.Drawing.Size(189, 23);
             this.cbPlayType.TabIndex = 8;
             this.cbPlayType.ValueMember = "Код типа спектакля";
             this.cbPlayType.Visible = false;
@@ -495,9 +530,10 @@
             // lblPlayType
             // 
             this.lblPlayType.AutoSize = true;
-            this.lblPlayType.Location = new System.Drawing.Point(16, 191);
+            this.lblPlayType.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPlayType.Location = new System.Drawing.Point(19, 235);
             this.lblPlayType.Name = "lblPlayType";
-            this.lblPlayType.Size = new System.Drawing.Size(82, 13);
+            this.lblPlayType.Size = new System.Drawing.Size(85, 15);
             this.lblPlayType.TabIndex = 7;
             this.lblPlayType.Text = "Тип спектакля";
             this.lblPlayType.Visible = false;
@@ -505,18 +541,21 @@
             // lblDuration
             // 
             this.lblDuration.AutoSize = true;
-            this.lblDuration.Location = new System.Drawing.Point(16, 228);
+            this.lblDuration.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblDuration.Location = new System.Drawing.Point(19, 281);
             this.lblDuration.Name = "lblDuration";
-            this.lblDuration.Size = new System.Drawing.Size(111, 13);
+            this.lblDuration.Size = new System.Drawing.Size(117, 15);
             this.lblDuration.TabIndex = 5;
             this.lblDuration.Text = "Продолжительность";
             this.lblDuration.Visible = false;
             // 
             // txtDuration
             // 
-            this.txtDuration.Location = new System.Drawing.Point(142, 225);
+            this.txtDuration.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtDuration.Location = new System.Drawing.Point(166, 277);
+            this.txtDuration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDuration.Name = "txtDuration";
-            this.txtDuration.Size = new System.Drawing.Size(163, 20);
+            this.txtDuration.Size = new System.Drawing.Size(189, 21);
             this.txtDuration.TabIndex = 4;
             this.txtDuration.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtDuration.Visible = false;
@@ -524,26 +563,30 @@
             // lblPlayTitle
             // 
             this.lblPlayTitle.AutoSize = true;
-            this.lblPlayTitle.Location = new System.Drawing.Point(16, 158);
+            this.lblPlayTitle.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPlayTitle.Location = new System.Drawing.Point(19, 194);
             this.lblPlayTitle.Name = "lblPlayTitle";
-            this.lblPlayTitle.Size = new System.Drawing.Size(83, 13);
+            this.lblPlayTitle.Size = new System.Drawing.Size(94, 15);
             this.lblPlayTitle.TabIndex = 3;
             this.lblPlayTitle.Text = "Наименование";
             this.lblPlayTitle.Visible = false;
             // 
             // txtPlayTitle
             // 
-            this.txtPlayTitle.Location = new System.Drawing.Point(142, 158);
+            this.txtPlayTitle.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtPlayTitle.Location = new System.Drawing.Point(166, 194);
+            this.txtPlayTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPlayTitle.Name = "txtPlayTitle";
-            this.txtPlayTitle.Size = new System.Drawing.Size(163, 20);
+            this.txtPlayTitle.Size = new System.Drawing.Size(189, 21);
             this.txtPlayTitle.TabIndex = 2;
             this.txtPlayTitle.Visible = false;
             // 
             // btnChangePerfomance
             // 
-            this.btnChangePerfomance.Location = new System.Drawing.Point(557, 140);
+            this.btnChangePerfomance.Location = new System.Drawing.Point(650, 172);
+            this.btnChangePerfomance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnChangePerfomance.Name = "btnChangePerfomance";
-            this.btnChangePerfomance.Size = new System.Drawing.Size(132, 31);
+            this.btnChangePerfomance.Size = new System.Drawing.Size(154, 38);
             this.btnChangePerfomance.TabIndex = 0;
             this.btnChangePerfomance.Text = "Изменить";
             this.btnChangePerfomance.UseVisualStyleBackColor = true;
@@ -559,10 +602,11 @@
             this.tpTicketPriceChange.Controls.Add(this.btnChangeTicketPrice);
             this.tpTicketPriceChange.Controls.Add(this.cbPerfomance_);
             this.tpTicketPriceChange.Controls.Add(this.lblPerfomance_);
-            this.tpTicketPriceChange.Location = new System.Drawing.Point(4, 22);
+            this.tpTicketPriceChange.Location = new System.Drawing.Point(4, 25);
+            this.tpTicketPriceChange.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpTicketPriceChange.Name = "tpTicketPriceChange";
-            this.tpTicketPriceChange.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTicketPriceChange.Size = new System.Drawing.Size(697, 378);
+            this.tpTicketPriceChange.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpTicketPriceChange.Size = new System.Drawing.Size(814, 468);
             this.tpTicketPriceChange.TabIndex = 2;
             this.tpTicketPriceChange.Text = "Изменение цены билета";
             this.tpTicketPriceChange.UseVisualStyleBackColor = true;
@@ -570,9 +614,9 @@
             // lblTicketCurrency
             // 
             this.lblTicketCurrency.AutoSize = true;
-            this.lblTicketCurrency.Location = new System.Drawing.Point(240, 304);
+            this.lblTicketCurrency.Location = new System.Drawing.Point(280, 374);
             this.lblTicketCurrency.Name = "lblTicketCurrency";
-            this.lblTicketCurrency.Size = new System.Drawing.Size(45, 13);
+            this.lblTicketCurrency.Size = new System.Drawing.Size(49, 16);
             this.lblTicketCurrency.TabIndex = 26;
             this.lblTicketCurrency.Text = "Валюта";
             // 
@@ -584,37 +628,40 @@
             this.dataTicket.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataTicket.BackgroundColor = System.Drawing.Color.White;
             this.dataTicket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataTicket.Location = new System.Drawing.Point(11, 56);
+            this.dataTicket.Location = new System.Drawing.Point(13, 69);
+            this.dataTicket.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataTicket.Name = "dataTicket";
             this.dataTicket.ReadOnly = true;
             this.dataTicket.RowHeadersVisible = false;
             this.dataTicket.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataTicket.Size = new System.Drawing.Size(664, 166);
+            this.dataTicket.Size = new System.Drawing.Size(775, 204);
             this.dataTicket.TabIndex = 25;
             this.dataTicket.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTicket_CellClick);
             // 
             // lblTicketPrice
             // 
             this.lblTicketPrice.AutoSize = true;
-            this.lblTicketPrice.Location = new System.Drawing.Point(17, 304);
+            this.lblTicketPrice.Location = new System.Drawing.Point(20, 374);
             this.lblTicketPrice.Name = "lblTicketPrice";
-            this.lblTicketPrice.Size = new System.Drawing.Size(71, 13);
+            this.lblTicketPrice.Size = new System.Drawing.Size(80, 16);
             this.lblTicketPrice.TabIndex = 23;
             this.lblTicketPrice.Text = "Цена билета";
             // 
             // txtTicketPrice
             // 
-            this.txtTicketPrice.Location = new System.Drawing.Point(118, 301);
+            this.txtTicketPrice.Location = new System.Drawing.Point(138, 370);
+            this.txtTicketPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTicketPrice.Name = "txtTicketPrice";
-            this.txtTicketPrice.Size = new System.Drawing.Size(100, 20);
+            this.txtTicketPrice.Size = new System.Drawing.Size(116, 21);
             this.txtTicketPrice.TabIndex = 22;
             this.txtTicketPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnChangeTicketPrice
             // 
-            this.btnChangeTicketPrice.Location = new System.Drawing.Point(510, 237);
+            this.btnChangeTicketPrice.Location = new System.Drawing.Point(595, 292);
+            this.btnChangeTicketPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnChangeTicketPrice.Name = "btnChangeTicketPrice";
-            this.btnChangeTicketPrice.Size = new System.Drawing.Size(165, 41);
+            this.btnChangeTicketPrice.Size = new System.Drawing.Size(192, 50);
             this.btnChangeTicketPrice.TabIndex = 21;
             this.btnChangeTicketPrice.Text = "Изменить цену билета";
             this.btnChangeTicketPrice.UseVisualStyleBackColor = true;
@@ -624,10 +671,12 @@
             // 
             this.cbPerfomance_.DataSource = this.спектакльBindingSource;
             this.cbPerfomance_.DisplayMember = "Наименование";
+            this.cbPerfomance_.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbPerfomance_.FormattingEnabled = true;
-            this.cbPerfomance_.Location = new System.Drawing.Point(101, 20);
+            this.cbPerfomance_.Location = new System.Drawing.Point(118, 25);
+            this.cbPerfomance_.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbPerfomance_.Name = "cbPerfomance_";
-            this.cbPerfomance_.Size = new System.Drawing.Size(217, 21);
+            this.cbPerfomance_.Size = new System.Drawing.Size(252, 23);
             this.cbPerfomance_.TabIndex = 20;
             this.cbPerfomance_.ValueMember = "Код спектакля";
             this.cbPerfomance_.SelectedIndexChanged += new System.EventHandler(this.cbPerfomance__SelectedIndexChanged);
@@ -635,15 +684,17 @@
             // lblPerfomance_
             // 
             this.lblPerfomance_.AutoSize = true;
-            this.lblPerfomance_.Location = new System.Drawing.Point(8, 23);
+            this.lblPerfomance_.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPerfomance_.Location = new System.Drawing.Point(9, 28);
             this.lblPerfomance_.Name = "lblPerfomance_";
-            this.lblPerfomance_.Size = new System.Drawing.Size(61, 13);
+            this.lblPerfomance_.Size = new System.Drawing.Size(65, 15);
             this.lblPerfomance_.TabIndex = 19;
             this.lblPerfomance_.Text = "Спектакль";
             // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.SecurityTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Theatre.Продажа_билетов_в_театрDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.БилетTableAdapter = null;
             this.tableAdapterManager.ДолжностьTableAdapter = null;
@@ -674,12 +725,14 @@
             // 
             // FormTickets
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 404);
+            this.ClientSize = new System.Drawing.Size(822, 497);
             this.Controls.Add(this.tabTickets);
             this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormTickets";
@@ -722,7 +775,6 @@
         private System.Windows.Forms.Label lblCurrency;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.TextBox txtPrice;
-        private System.Windows.Forms.TextBox txtDateOfPerformance;
         private System.Windows.Forms.Label lblDateOfPerformance;
         private System.Windows.Forms.TextBox txtPlayTime;
         private System.Windows.Forms.Label lblPlayTime;
@@ -773,6 +825,7 @@
         private System.Windows.Forms.TextBox txtTicketPrice;
         private System.Windows.Forms.DataGridView dataTicket;
         private System.Windows.Forms.Label lblTicketCurrency;
+        private System.Windows.Forms.TextBox txtDateOfPerformance;
 
     }
 }

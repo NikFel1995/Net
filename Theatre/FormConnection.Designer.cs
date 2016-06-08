@@ -46,17 +46,20 @@
             // lblIp
             // 
             this.lblIp.AutoSize = true;
-            this.lblIp.Location = new System.Drawing.Point(34, 40);
+            this.lblIp.BackColor = System.Drawing.Color.White;
+            this.lblIp.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblIp.ForeColor = System.Drawing.Color.Black;
+            this.lblIp.Location = new System.Drawing.Point(32, 151);
             this.lblIp.Name = "lblIp";
-            this.lblIp.Size = new System.Drawing.Size(50, 13);
+            this.lblIp.Size = new System.Drawing.Size(57, 15);
             this.lblIp.TabIndex = 0;
             this.lblIp.Text = "IP-адрес";
             // 
             // txtIp
             // 
-            this.txtIp.Location = new System.Drawing.Point(116, 37);
+            this.txtIp.Location = new System.Drawing.Point(150, 148);
             this.txtIp.Name = "txtIp";
-            this.txtIp.Size = new System.Drawing.Size(100, 20);
+            this.txtIp.Size = new System.Drawing.Size(117, 20);
             this.txtIp.TabIndex = 1;
             this.txtIp.Text = "127.0.0.1";
             this.txtIp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -64,9 +67,9 @@
             // 
             // txtPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(362, 37);
+            this.txtPort.Location = new System.Drawing.Point(150, 174);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(100, 20);
+            this.txtPort.Size = new System.Drawing.Size(117, 20);
             this.txtPort.TabIndex = 2;
             this.txtPort.Text = "1433";
             this.txtPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -75,15 +78,18 @@
             // lblPort
             // 
             this.lblPort.AutoSize = true;
-            this.lblPort.Location = new System.Drawing.Point(280, 40);
+            this.lblPort.BackColor = System.Drawing.Color.White;
+            this.lblPort.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPort.ForeColor = System.Drawing.Color.Black;
+            this.lblPort.Location = new System.Drawing.Point(32, 177);
             this.lblPort.Name = "lblPort";
-            this.lblPort.Size = new System.Drawing.Size(32, 13);
+            this.lblPort.Size = new System.Drawing.Size(34, 15);
             this.lblPort.TabIndex = 2;
             this.lblPort.Text = "Порт";
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(362, 125);
+            this.txtPassword.Location = new System.Drawing.Point(150, 253);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(117, 20);
@@ -93,15 +99,18 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(282, 128);
+            this.lblPassword.BackColor = System.Drawing.Color.White;
+            this.lblPassword.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPassword.ForeColor = System.Drawing.Color.Black;
+            this.lblPassword.Location = new System.Drawing.Point(32, 256);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(45, 13);
+            this.lblPassword.Size = new System.Drawing.Size(49, 15);
             this.lblPassword.TabIndex = 6;
             this.lblPassword.Text = "Пароль";
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(145, 125);
+            this.txtUser.Location = new System.Drawing.Point(150, 227);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(117, 20);
             this.txtUser.TabIndex = 4;
@@ -110,18 +119,24 @@
             // lblUser
             // 
             this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(36, 128);
+            this.lblUser.BackColor = System.Drawing.Color.White;
+            this.lblUser.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblUser.ForeColor = System.Drawing.Color.Black;
+            this.lblUser.Location = new System.Drawing.Point(32, 230);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(103, 13);
+            this.lblUser.Size = new System.Drawing.Size(104, 15);
             this.lblUser.TabIndex = 4;
             this.lblUser.Text = "Имя пользователя";
             // 
             // lblUserType
             // 
             this.lblUserType.AutoSize = true;
-            this.lblUserType.Location = new System.Drawing.Point(156, 92);
+            this.lblUserType.BackColor = System.Drawing.Color.White;
+            this.lblUserType.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblUserType.ForeColor = System.Drawing.Color.Black;
+            this.lblUserType.Location = new System.Drawing.Point(32, 203);
             this.lblUserType.Name = "lblUserType";
-            this.lblUserType.Size = new System.Drawing.Size(100, 13);
+            this.lblUserType.Size = new System.Drawing.Size(101, 15);
             this.lblUserType.TabIndex = 8;
             this.lblUserType.Text = "Тип пользователя";
             // 
@@ -132,14 +147,14 @@
             this.comboUserType.Items.AddRange(new object[] {
             "Кассир",
             "Администратор"});
-            this.comboUserType.Location = new System.Drawing.Point(262, 89);
+            this.comboUserType.Location = new System.Drawing.Point(150, 200);
             this.comboUserType.Name = "comboUserType";
-            this.comboUserType.Size = new System.Drawing.Size(121, 21);
+            this.comboUserType.Size = new System.Drawing.Size(117, 21);
             this.comboUserType.TabIndex = 3;
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(237, 164);
+            this.btnConnect.Location = new System.Drawing.Point(35, 295);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(114, 38);
             this.btnConnect.TabIndex = 6;
@@ -149,20 +164,27 @@
             // 
             // lblGuest
             // 
+            this.lblGuest.ActiveLinkColor = System.Drawing.Color.Silver;
             this.lblGuest.AutoSize = true;
-            this.lblGuest.Location = new System.Drawing.Point(447, 221);
+            this.lblGuest.BackColor = System.Drawing.Color.Transparent;
+            this.lblGuest.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblGuest.LinkColor = System.Drawing.Color.Gray;
+            this.lblGuest.Location = new System.Drawing.Point(164, 308);
             this.lblGuest.Name = "lblGuest";
-            this.lblGuest.Size = new System.Drawing.Size(90, 13);
+            this.lblGuest.Size = new System.Drawing.Size(107, 15);
             this.lblGuest.TabIndex = 7;
             this.lblGuest.TabStop = true;
-            this.lblGuest.Text = "Войти как Гость";
+            this.lblGuest.Text = "Любимый зритель";
             this.lblGuest.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblGuest_LinkClicked);
             // 
             // FormConnection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(549, 243);
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(305, 364);
             this.Controls.Add(this.lblGuest);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.comboUserType);

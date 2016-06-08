@@ -50,15 +50,18 @@
             // 
             // menu
             // 
+            this.menu.BackColor = System.Drawing.Color.White;
+            this.menu.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuDataBase,
+            this.menuAbout,
             this.menuDataBaseActions,
-            this.menuSecurity,
-            this.menuAbout});
+            this.menuSecurity});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
+            this.menu.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
             this.menu.ShowItemToolTips = true;
-            this.menu.Size = new System.Drawing.Size(673, 24);
+            this.menu.Size = new System.Drawing.Size(785, 25);
             this.menu.TabIndex = 0;
             this.menu.Text = "menu";
             // 
@@ -68,13 +71,13 @@
             this.menuDataBaseConnect,
             this.menuDataBaseDisconnect});
             this.menuDataBase.Name = "menuDataBase";
-            this.menuDataBase.Size = new System.Drawing.Size(86, 20);
+            this.menuDataBase.Size = new System.Drawing.Size(94, 21);
             this.menuDataBase.Text = "База данных";
             // 
             // menuDataBaseConnect
             // 
             this.menuDataBaseConnect.Name = "menuDataBaseConnect";
-            this.menuDataBaseConnect.Size = new System.Drawing.Size(156, 22);
+            this.menuDataBaseConnect.Size = new System.Drawing.Size(159, 22);
             this.menuDataBaseConnect.Text = "Подключиться";
             this.menuDataBaseConnect.Click += new System.EventHandler(this.menuDataBaseConnect_Click);
             // 
@@ -82,7 +85,7 @@
             // 
             this.menuDataBaseDisconnect.Enabled = false;
             this.menuDataBaseDisconnect.Name = "menuDataBaseDisconnect";
-            this.menuDataBaseDisconnect.Size = new System.Drawing.Size(156, 22);
+            this.menuDataBaseDisconnect.Size = new System.Drawing.Size(159, 22);
             this.menuDataBaseDisconnect.Text = "Отключиться";
             this.menuDataBaseDisconnect.Click += new System.EventHandler(this.menuDataBaseDisconnect_Click);
             // 
@@ -93,14 +96,14 @@
             this.menuDataBaseActionsTickets,
             this.menuDataBaseActionsReports});
             this.menuDataBaseActions.Name = "menuDataBaseActions";
-            this.menuDataBaseActions.Size = new System.Drawing.Size(97, 20);
+            this.menuDataBaseActions.Size = new System.Drawing.Size(106, 21);
             this.menuDataBaseActions.Text = "Действия с БД";
             this.menuDataBaseActions.Visible = false;
             // 
             // menuDataBaseActionsView
             // 
             this.menuDataBaseActionsView.Name = "menuDataBaseActionsView";
-            this.menuDataBaseActionsView.Size = new System.Drawing.Size(255, 22);
+            this.menuDataBaseActionsView.Size = new System.Drawing.Size(276, 22);
             this.menuDataBaseActionsView.Text = "Просмотр данных";
             this.menuDataBaseActionsView.Visible = false;
             this.menuDataBaseActionsView.Click += new System.EventHandler(this.menuDataBaseActionsView_Click);
@@ -108,7 +111,7 @@
             // menuDataBaseActionsTickets
             // 
             this.menuDataBaseActionsTickets.Name = "menuDataBaseActionsTickets";
-            this.menuDataBaseActionsTickets.Size = new System.Drawing.Size(255, 22);
+            this.menuDataBaseActionsTickets.Size = new System.Drawing.Size(276, 22);
             this.menuDataBaseActionsTickets.Text = "Управление продажами билетов";
             this.menuDataBaseActionsTickets.Visible = false;
             this.menuDataBaseActionsTickets.Click += new System.EventHandler(this.menuDataBaseActionsTickets_Click);
@@ -116,7 +119,7 @@
             // menuDataBaseActionsReports
             // 
             this.menuDataBaseActionsReports.Name = "menuDataBaseActionsReports";
-            this.menuDataBaseActionsReports.Size = new System.Drawing.Size(255, 22);
+            this.menuDataBaseActionsReports.Size = new System.Drawing.Size(276, 22);
             this.menuDataBaseActionsReports.Text = "Сформировать отчеты";
             this.menuDataBaseActionsReports.Visible = false;
             this.menuDataBaseActionsReports.Click += new System.EventHandler(this.menuDataBaseActionsReports_Click);
@@ -124,7 +127,7 @@
             // menuSecurity
             // 
             this.menuSecurity.Name = "menuSecurity";
-            this.menuSecurity.Size = new System.Drawing.Size(94, 20);
+            this.menuSecurity.Size = new System.Drawing.Size(105, 21);
             this.menuSecurity.Text = "Безопасность";
             this.menuSecurity.Visible = false;
             this.menuSecurity.Click += new System.EventHandler(this.menuSecurity_Click);
@@ -132,27 +135,29 @@
             // menuAbout
             // 
             this.menuAbout.Name = "menuAbout";
-            this.menuAbout.Size = new System.Drawing.Size(94, 20);
+            this.menuAbout.Size = new System.Drawing.Size(106, 21);
             this.menuAbout.Text = "О программе";
             this.menuAbout.Click += new System.EventHandler(this.menuAbout_Click);
             // 
             // status
             // 
+            this.status.BackColor = System.Drawing.Color.White;
             this.status.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblStatusConnection,
             this.lblUser});
-            this.status.Location = new System.Drawing.Point(0, 347);
+            this.status.Location = new System.Drawing.Point(0, 404);
             this.status.Name = "status";
+            this.status.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
             this.status.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.status.ShowItemToolTips = true;
-            this.status.Size = new System.Drawing.Size(673, 22);
+            this.status.Size = new System.Drawing.Size(785, 22);
             this.status.TabIndex = 1;
             this.status.Text = "status";
             // 
             // lblStatusConnection
             // 
             this.lblStatusConnection.Name = "lblStatusConnection";
-            this.lblStatusConnection.Size = new System.Drawing.Size(658, 17);
+            this.lblStatusConnection.Size = new System.Drawing.Size(768, 17);
             this.lblStatusConnection.Spring = true;
             this.lblStatusConnection.Tag = "Не подключено";
             this.lblStatusConnection.Text = "Не подключено";
@@ -175,18 +180,22 @@
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 369);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(785, 426);
             this.Controls.Add(this.status);
             this.Controls.Add(this.menu);
             this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menu;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "АИС \"Продажа билетов в театр\"";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.status.ResumeLayout(false);

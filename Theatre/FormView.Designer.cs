@@ -58,9 +58,10 @@
             this.tabView.Controls.Add(this.tpCashier);
             this.tabView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabView.Location = new System.Drawing.Point(0, 0);
+            this.tabView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabView.Name = "tabView";
             this.tabView.SelectedIndex = 0;
-            this.tabView.Size = new System.Drawing.Size(643, 367);
+            this.tabView.Size = new System.Drawing.Size(750, 452);
             this.tabView.TabIndex = 0;
             // 
             // tpTicketsInfo
@@ -68,19 +69,22 @@
             this.tpTicketsInfo.Controls.Add(this.btnSearchViewer);
             this.tpTicketsInfo.Controls.Add(this.txtViewer);
             this.tpTicketsInfo.Controls.Add(this.dataView1);
-            this.tpTicketsInfo.Location = new System.Drawing.Point(4, 22);
+            this.tpTicketsInfo.Location = new System.Drawing.Point(4, 25);
+            this.tpTicketsInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpTicketsInfo.Name = "tpTicketsInfo";
-            this.tpTicketsInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTicketsInfo.Size = new System.Drawing.Size(635, 341);
+            this.tpTicketsInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpTicketsInfo.Size = new System.Drawing.Size(742, 423);
             this.tpTicketsInfo.TabIndex = 0;
             this.tpTicketsInfo.Text = "Информация о билетах";
             this.tpTicketsInfo.UseVisualStyleBackColor = true;
             // 
             // btnSearchViewer
             // 
-            this.btnSearchViewer.Location = new System.Drawing.Point(145, 42);
+            this.btnSearchViewer.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnSearchViewer.Location = new System.Drawing.Point(169, 52);
+            this.btnSearchViewer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearchViewer.Name = "btnSearchViewer";
-            this.btnSearchViewer.Size = new System.Drawing.Size(75, 23);
+            this.btnSearchViewer.Size = new System.Drawing.Size(87, 28);
             this.btnSearchViewer.TabIndex = 2;
             this.btnSearchViewer.Text = "Поиск";
             this.btnSearchViewer.UseVisualStyleBackColor = true;
@@ -88,9 +92,11 @@
             // 
             // txtViewer
             // 
-            this.txtViewer.Location = new System.Drawing.Point(20, 44);
+            this.txtViewer.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtViewer.Location = new System.Drawing.Point(23, 54);
+            this.txtViewer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtViewer.Name = "txtViewer";
-            this.txtViewer.Size = new System.Drawing.Size(100, 20);
+            this.txtViewer.Size = new System.Drawing.Size(116, 21);
             this.txtViewer.TabIndex = 1;
             this.txtViewer.Tag = "Зритель";
             this.txtViewer.Text = "Зритель";
@@ -110,12 +116,13 @@
             this.dataView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataView1.BackgroundColor = System.Drawing.Color.White;
             this.dataView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataView1.Location = new System.Drawing.Point(3, 98);
+            this.dataView1.Location = new System.Drawing.Point(3, 121);
+            this.dataView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataView1.Name = "dataView1";
             this.dataView1.ReadOnly = true;
             this.dataView1.RowHeadersVisible = false;
             this.dataView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataView1.Size = new System.Drawing.Size(629, 240);
+            this.dataView1.Size = new System.Drawing.Size(734, 292);
             this.dataView1.TabIndex = 0;
             // 
             // tpPlayInfo
@@ -123,19 +130,22 @@
             this.tpPlayInfo.Controls.Add(this.btnSearchTheatre);
             this.tpPlayInfo.Controls.Add(this.txtTheatre);
             this.tpPlayInfo.Controls.Add(this.dataView2);
-            this.tpPlayInfo.Location = new System.Drawing.Point(4, 22);
+            this.tpPlayInfo.Location = new System.Drawing.Point(4, 25);
+            this.tpPlayInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpPlayInfo.Name = "tpPlayInfo";
-            this.tpPlayInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPlayInfo.Size = new System.Drawing.Size(635, 341);
+            this.tpPlayInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpPlayInfo.Size = new System.Drawing.Size(742, 423);
             this.tpPlayInfo.TabIndex = 1;
             this.tpPlayInfo.Text = "Информация о спектаклях";
             this.tpPlayInfo.UseVisualStyleBackColor = true;
             // 
             // btnSearchTheatre
             // 
-            this.btnSearchTheatre.Location = new System.Drawing.Point(146, 31);
+            this.btnSearchTheatre.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnSearchTheatre.Location = new System.Drawing.Point(170, 38);
+            this.btnSearchTheatre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearchTheatre.Name = "btnSearchTheatre";
-            this.btnSearchTheatre.Size = new System.Drawing.Size(75, 23);
+            this.btnSearchTheatre.Size = new System.Drawing.Size(87, 28);
             this.btnSearchTheatre.TabIndex = 5;
             this.btnSearchTheatre.Text = "Поиск";
             this.btnSearchTheatre.UseVisualStyleBackColor = true;
@@ -143,9 +153,11 @@
             // 
             // txtTheatre
             // 
-            this.txtTheatre.Location = new System.Drawing.Point(21, 33);
+            this.txtTheatre.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtTheatre.Location = new System.Drawing.Point(24, 41);
+            this.txtTheatre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTheatre.Name = "txtTheatre";
-            this.txtTheatre.Size = new System.Drawing.Size(100, 20);
+            this.txtTheatre.Size = new System.Drawing.Size(116, 21);
             this.txtTheatre.TabIndex = 4;
             this.txtTheatre.Tag = "Театр";
             this.txtTheatre.Text = "Театр";
@@ -165,12 +177,13 @@
             this.dataView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataView2.BackgroundColor = System.Drawing.Color.White;
             this.dataView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataView2.Location = new System.Drawing.Point(3, 98);
+            this.dataView2.Location = new System.Drawing.Point(3, 121);
+            this.dataView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataView2.Name = "dataView2";
             this.dataView2.ReadOnly = true;
             this.dataView2.RowHeadersVisible = false;
             this.dataView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataView2.Size = new System.Drawing.Size(629, 240);
+            this.dataView2.Size = new System.Drawing.Size(734, 292);
             this.dataView2.TabIndex = 3;
             // 
             // tpCashier
@@ -178,19 +191,22 @@
             this.tpCashier.Controls.Add(this.btnSearchCashier);
             this.tpCashier.Controls.Add(this.txtCashier);
             this.tpCashier.Controls.Add(this.dataView3);
-            this.tpCashier.Location = new System.Drawing.Point(4, 22);
+            this.tpCashier.Location = new System.Drawing.Point(4, 25);
+            this.tpCashier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpCashier.Name = "tpCashier";
-            this.tpCashier.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCashier.Size = new System.Drawing.Size(635, 341);
+            this.tpCashier.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tpCashier.Size = new System.Drawing.Size(742, 423);
             this.tpCashier.TabIndex = 2;
             this.tpCashier.Text = "Информация о кассирах";
             this.tpCashier.UseVisualStyleBackColor = true;
             // 
             // btnSearchCashier
             // 
-            this.btnSearchCashier.Location = new System.Drawing.Point(146, 17);
+            this.btnSearchCashier.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnSearchCashier.Location = new System.Drawing.Point(170, 21);
+            this.btnSearchCashier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearchCashier.Name = "btnSearchCashier";
-            this.btnSearchCashier.Size = new System.Drawing.Size(75, 23);
+            this.btnSearchCashier.Size = new System.Drawing.Size(87, 28);
             this.btnSearchCashier.TabIndex = 8;
             this.btnSearchCashier.Text = "Поиск";
             this.btnSearchCashier.UseVisualStyleBackColor = true;
@@ -198,9 +214,11 @@
             // 
             // txtCashier
             // 
-            this.txtCashier.Location = new System.Drawing.Point(21, 19);
+            this.txtCashier.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtCashier.Location = new System.Drawing.Point(24, 23);
+            this.txtCashier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCashier.Name = "txtCashier";
-            this.txtCashier.Size = new System.Drawing.Size(100, 20);
+            this.txtCashier.Size = new System.Drawing.Size(116, 21);
             this.txtCashier.TabIndex = 7;
             this.txtCashier.Tag = "Фамилия";
             this.txtCashier.Text = "Фамилия";
@@ -220,22 +238,25 @@
             this.dataView3.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataView3.BackgroundColor = System.Drawing.Color.White;
             this.dataView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataView3.Location = new System.Drawing.Point(3, 98);
+            this.dataView3.Location = new System.Drawing.Point(3, 121);
+            this.dataView3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataView3.Name = "dataView3";
             this.dataView3.ReadOnly = true;
             this.dataView3.RowHeadersVisible = false;
             this.dataView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataView3.Size = new System.Drawing.Size(629, 240);
+            this.dataView3.Size = new System.Drawing.Size(734, 292);
             this.dataView3.TabIndex = 6;
             // 
             // FormView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(643, 367);
+            this.ClientSize = new System.Drawing.Size(750, 452);
             this.Controls.Add(this.tabView);
             this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormView";

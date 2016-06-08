@@ -92,6 +92,10 @@ namespace Theatre
                            dateOfPerformance + "', '" +
                            playTime + "', '" +
                            dateOfTicketSales + "');";
+  
+
+           
+
             do
             {
                 var res = _sqlServer.InsertData(query);
@@ -130,7 +134,7 @@ namespace Theatre
                                "Продолжительность = '" + duration + "' " +
                                "WHERE [Код спектакля] = " + playId;
                 var res = _sqlServer.UpdateDate(query);
-                MessageBox.Show(res == 1 ? "Данные успешно обновлены!" : "Ошибка при обновлении данных!");
+                MessageBox.Show(res == 1 ? "Данные успешно обновлены!" : "Ошибка при обновлении данных!");      //!!!!
                 this.спектакльTableAdapter.Fill(this.продажа_билетов_в_театрDataSet.Спектакль);
                 ShowInfo(false);
 

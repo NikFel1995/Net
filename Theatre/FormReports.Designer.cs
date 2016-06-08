@@ -32,6 +32,26 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReports));
             this.tabReports = new System.Windows.Forms.TabControl();
             this.tpAllSalesTickets = new System.Windows.Forms.TabPage();
+            this.report1DataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.report1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.продажа_билетов_в_театрDataSet1 = new Theatre.Продажа_билетов_в_театрDataSet();
             this.tpTicketsCertainViewer = new System.Windows.Forms.TabPage();
             this.fillToolStrip = new System.Windows.Forms.ToolStrip();
             this.viewerToolStripLabel = new System.Windows.Forms.ToolStripLabel();
@@ -107,28 +127,11 @@
             this.report3TableAdapter = new Theatre.Продажа_билетов_в_театрDataSetTableAdapters.report3TableAdapter();
             this.report4TableAdapter = new Theatre.Продажа_билетов_в_театрDataSetTableAdapters.report4TableAdapter();
             this.report5TableAdapter = new Theatre.Продажа_билетов_в_театрDataSetTableAdapters.report5TableAdapter();
-            this.продажа_билетов_в_театрDataSet1 = new Theatre.Продажа_билетов_в_театрDataSet();
-            this.report1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.report1DataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabReports.SuspendLayout();
             this.tpAllSalesTickets.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.report1DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.report1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.продажа_билетов_в_театрDataSet1)).BeginInit();
             this.tpTicketsCertainViewer.SuspendLayout();
             this.fillToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.report2DataGridView)).BeginInit();
@@ -146,9 +149,6 @@
             this.fillToolStrip3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.report5DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.report5BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.продажа_билетов_в_театрDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.report1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.report1DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabReports
@@ -161,6 +161,7 @@
             this.tabReports.Controls.Add(this.tpTicketsCertainPerfomanceGivenPeriod);
             this.tabReports.Controls.Add(this.tpTicketsCertainCashier);
             this.tabReports.Controls.Add(this.tpTicketsCertainViewer_);
+            this.tabReports.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tabReports.Location = new System.Drawing.Point(0, 27);
             this.tabReports.Name = "tabReports";
             this.tabReports.SelectedIndex = 0;
@@ -171,23 +172,208 @@
             // 
             this.tpAllSalesTickets.AutoScroll = true;
             this.tpAllSalesTickets.Controls.Add(this.report1DataGridView);
-            this.tpAllSalesTickets.Location = new System.Drawing.Point(4, 22);
+            this.tpAllSalesTickets.Location = new System.Drawing.Point(4, 25);
             this.tpAllSalesTickets.Name = "tpAllSalesTickets";
             this.tpAllSalesTickets.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAllSalesTickets.Size = new System.Drawing.Size(691, 316);
+            this.tpAllSalesTickets.Size = new System.Drawing.Size(691, 313);
             this.tpAllSalesTickets.TabIndex = 0;
             this.tpAllSalesTickets.Text = "Все продажи билетов в театр";
             this.tpAllSalesTickets.UseVisualStyleBackColor = true;
+            // 
+            // report1DataGridView
+            // 
+            this.report1DataGridView.AllowUserToAddRows = false;
+            this.report1DataGridView.AllowUserToDeleteRows = false;
+            this.report1DataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.report1DataGridView.AutoGenerateColumns = false;
+            this.report1DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.report1DataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.report1DataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.report1DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.report1DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17});
+            this.report1DataGridView.DataSource = this.report1BindingSource;
+            this.report1DataGridView.Location = new System.Drawing.Point(3, 60);
+            this.report1DataGridView.Name = "report1DataGridView";
+            this.report1DataGridView.ReadOnly = true;
+            this.report1DataGridView.RowHeadersVisible = false;
+            this.report1DataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.report1DataGridView.Size = new System.Drawing.Size(685, 250);
+            this.report1DataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Спектакль";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Спектакль";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 91;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Дата спектакля";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Дата спектакля";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 110;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Время начала спектакля";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Время начала спектакля";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 158;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Тип спектакля";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Тип спектакля";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 102;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Продолжительность";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Продолжительность";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 143;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Театр";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Театр";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 65;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Зал";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Зал";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 53;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Ряд";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Ряд";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 52;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Место";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Место";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.Width = 69;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Цена";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Цена";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 63;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Дата продажи";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Дата продажи";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            this.dataGridViewTextBoxColumn11.Width = 106;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Фамилия Зрителя";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Фамилия Зрителя";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            this.dataGridViewTextBoxColumn12.Width = 121;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "Имя Зрителя";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Имя Зрителя";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            this.dataGridViewTextBoxColumn13.Width = 94;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Отчество Зрителя";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Отчество Зрителя";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            this.dataGridViewTextBoxColumn14.Width = 117;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Фамилия Кассира";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Фамилия Кассира";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.ReadOnly = true;
+            this.dataGridViewTextBoxColumn15.Width = 129;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Имя Кассира";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Имя Кассира";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            this.dataGridViewTextBoxColumn16.Width = 102;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "Отчество Кассира";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Отчество Кассира";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.ReadOnly = true;
+            this.dataGridViewTextBoxColumn17.Width = 125;
+            // 
+            // report1BindingSource
+            // 
+            this.report1BindingSource.DataMember = "report1";
+            this.report1BindingSource.DataSource = this.продажа_билетов_в_театрDataSet1;
+            // 
+            // продажа_билетов_в_театрDataSet1
+            // 
+            this.продажа_билетов_в_театрDataSet1.DataSetName = "Продажа_билетов_в_театрDataSet";
+            this.продажа_билетов_в_театрDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tpTicketsCertainViewer
             // 
             this.tpTicketsCertainViewer.AutoScroll = true;
             this.tpTicketsCertainViewer.Controls.Add(this.fillToolStrip);
             this.tpTicketsCertainViewer.Controls.Add(this.report2DataGridView);
-            this.tpTicketsCertainViewer.Location = new System.Drawing.Point(4, 22);
+            this.tpTicketsCertainViewer.Location = new System.Drawing.Point(4, 25);
             this.tpTicketsCertainViewer.Name = "tpTicketsCertainViewer";
             this.tpTicketsCertainViewer.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTicketsCertainViewer.Size = new System.Drawing.Size(691, 316);
+            this.tpTicketsCertainViewer.Size = new System.Drawing.Size(691, 313);
             this.tpTicketsCertainViewer.TabIndex = 1;
             this.tpTicketsCertainViewer.Text = "Продажа билетов определенному зрителю";
             this.tpTicketsCertainViewer.UseVisualStyleBackColor = true;
@@ -195,6 +381,7 @@
             // fillToolStrip
             // 
             this.fillToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.fillToolStrip.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.fillToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.fillToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewerToolStripLabel,
@@ -202,14 +389,14 @@
             this.fillToolStripButton});
             this.fillToolStrip.Location = new System.Drawing.Point(5, 24);
             this.fillToolStrip.Name = "fillToolStrip";
-            this.fillToolStrip.Size = new System.Drawing.Size(258, 25);
+            this.fillToolStrip.Size = new System.Drawing.Size(267, 25);
             this.fillToolStrip.TabIndex = 1;
             this.fillToolStrip.Text = "fillToolStrip";
             // 
             // viewerToolStripLabel
             // 
             this.viewerToolStripLabel.Name = "viewerToolStripLabel";
-            this.viewerToolStripLabel.Size = new System.Drawing.Size(107, 22);
+            this.viewerToolStripLabel.Size = new System.Drawing.Size(113, 22);
             this.viewerToolStripLabel.Text = "Фамилия зрителя:";
             // 
             // viewerToolStripTextBox
@@ -221,7 +408,7 @@
             // 
             this.fillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.fillToolStripButton.Name = "fillToolStripButton";
-            this.fillToolStripButton.Size = new System.Drawing.Size(46, 22);
+            this.fillToolStripButton.Size = new System.Drawing.Size(49, 22);
             this.fillToolStripButton.Text = "Поиск";
             this.fillToolStripButton.Click += new System.EventHandler(this.fillToolStripButton_Click);
             // 
@@ -254,7 +441,7 @@
             this.report2DataGridView.ReadOnly = true;
             this.report2DataGridView.RowHeadersVisible = false;
             this.report2DataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.report2DataGridView.Size = new System.Drawing.Size(685, 253);
+            this.report2DataGridView.Size = new System.Drawing.Size(685, 250);
             this.report2DataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn18
@@ -359,10 +546,10 @@
             // 
             this.tpTicketsCertainPerfomanceGivenPeriod.Controls.Add(this.fillToolStrip1);
             this.tpTicketsCertainPerfomanceGivenPeriod.Controls.Add(this.report3DataGridView);
-            this.tpTicketsCertainPerfomanceGivenPeriod.Location = new System.Drawing.Point(4, 22);
+            this.tpTicketsCertainPerfomanceGivenPeriod.Location = new System.Drawing.Point(4, 25);
             this.tpTicketsCertainPerfomanceGivenPeriod.Name = "tpTicketsCertainPerfomanceGivenPeriod";
             this.tpTicketsCertainPerfomanceGivenPeriod.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTicketsCertainPerfomanceGivenPeriod.Size = new System.Drawing.Size(691, 316);
+            this.tpTicketsCertainPerfomanceGivenPeriod.Size = new System.Drawing.Size(691, 313);
             this.tpTicketsCertainPerfomanceGivenPeriod.TabIndex = 2;
             this.tpTicketsCertainPerfomanceGivenPeriod.Text = "Продажа билетов на определенный спектакль в заданный период";
             this.tpTicketsCertainPerfomanceGivenPeriod.UseVisualStyleBackColor = true;
@@ -370,6 +557,7 @@
             // fillToolStrip1
             // 
             this.fillToolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.fillToolStrip1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.fillToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.fillToolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dateBeginToolStripLabel,
@@ -381,14 +569,14 @@
             this.fillToolStripButton1});
             this.fillToolStrip1.Location = new System.Drawing.Point(5, 24);
             this.fillToolStrip1.Name = "fillToolStrip1";
-            this.fillToolStrip1.Size = new System.Drawing.Size(607, 25);
+            this.fillToolStrip1.Size = new System.Drawing.Size(635, 25);
             this.fillToolStrip1.TabIndex = 1;
             this.fillToolStrip1.Text = "fillToolStrip1";
             // 
             // dateBeginToolStripLabel
             // 
             this.dateBeginToolStripLabel.Name = "dateBeginToolStripLabel";
-            this.dateBeginToolStripLabel.Size = new System.Drawing.Size(96, 22);
+            this.dateBeginToolStripLabel.Size = new System.Drawing.Size(105, 22);
             this.dateBeginToolStripLabel.Text = "Начальная дата:";
             // 
             // dateBeginToolStripTextBox
@@ -399,7 +587,7 @@
             // dateEndToolStripLabel
             // 
             this.dateEndToolStripLabel.Name = "dateEndToolStripLabel";
-            this.dateEndToolStripLabel.Size = new System.Drawing.Size(89, 22);
+            this.dateEndToolStripLabel.Size = new System.Drawing.Size(99, 22);
             this.dateEndToolStripLabel.Text = "Конечная дата:";
             // 
             // dateEndToolStripTextBox
@@ -410,7 +598,7 @@
             // perfomanceToolStripLabel
             // 
             this.perfomanceToolStripLabel.Name = "perfomanceToolStripLabel";
-            this.perfomanceToolStripLabel.Size = new System.Drawing.Size(67, 22);
+            this.perfomanceToolStripLabel.Size = new System.Drawing.Size(73, 22);
             this.perfomanceToolStripLabel.Text = "Спектакль:";
             // 
             // perfomanceToolStripTextBox
@@ -422,7 +610,7 @@
             // 
             this.fillToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.fillToolStripButton1.Name = "fillToolStripButton1";
-            this.fillToolStripButton1.Size = new System.Drawing.Size(46, 22);
+            this.fillToolStripButton1.Size = new System.Drawing.Size(49, 22);
             this.fillToolStripButton1.Text = "Поиск";
             this.fillToolStripButton1.Click += new System.EventHandler(this.fillToolStripButton1_Click);
             // 
@@ -450,7 +638,7 @@
             this.report3DataGridView.ReadOnly = true;
             this.report3DataGridView.RowHeadersVisible = false;
             this.report3DataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.report3DataGridView.Size = new System.Drawing.Size(685, 253);
+            this.report3DataGridView.Size = new System.Drawing.Size(685, 250);
             this.report3DataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn29
@@ -498,10 +686,10 @@
             this.tpTicketsCertainCashier.AutoScroll = true;
             this.tpTicketsCertainCashier.Controls.Add(this.fillToolStrip2);
             this.tpTicketsCertainCashier.Controls.Add(this.report4DataGridView);
-            this.tpTicketsCertainCashier.Location = new System.Drawing.Point(4, 22);
+            this.tpTicketsCertainCashier.Location = new System.Drawing.Point(4, 24);
             this.tpTicketsCertainCashier.Name = "tpTicketsCertainCashier";
             this.tpTicketsCertainCashier.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTicketsCertainCashier.Size = new System.Drawing.Size(691, 316);
+            this.tpTicketsCertainCashier.Size = new System.Drawing.Size(691, 314);
             this.tpTicketsCertainCashier.TabIndex = 3;
             this.tpTicketsCertainCashier.Text = "Продажа билетов определенного кассира";
             this.tpTicketsCertainCashier.UseVisualStyleBackColor = true;
@@ -509,6 +697,7 @@
             // fillToolStrip2
             // 
             this.fillToolStrip2.Dock = System.Windows.Forms.DockStyle.None;
+            this.fillToolStrip2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.fillToolStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.fillToolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cashierToolStripLabel,
@@ -516,14 +705,14 @@
             this.fillToolStripButton2});
             this.fillToolStrip2.Location = new System.Drawing.Point(5, 24);
             this.fillToolStrip2.Name = "fillToolStrip2";
-            this.fillToolStrip2.Size = new System.Drawing.Size(259, 25);
+            this.fillToolStrip2.Size = new System.Drawing.Size(275, 25);
             this.fillToolStrip2.TabIndex = 1;
             this.fillToolStrip2.Text = "fillToolStrip2";
             // 
             // cashierToolStripLabel
             // 
             this.cashierToolStripLabel.Name = "cashierToolStripLabel";
-            this.cashierToolStripLabel.Size = new System.Drawing.Size(108, 22);
+            this.cashierToolStripLabel.Size = new System.Drawing.Size(121, 22);
             this.cashierToolStripLabel.Text = "Фамилия кассира:";
             // 
             // cashierToolStripTextBox
@@ -535,7 +724,7 @@
             // 
             this.fillToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.fillToolStripButton2.Name = "fillToolStripButton2";
-            this.fillToolStripButton2.Size = new System.Drawing.Size(46, 22);
+            this.fillToolStripButton2.Size = new System.Drawing.Size(49, 22);
             this.fillToolStripButton2.Text = "Поиск";
             this.fillToolStripButton2.Click += new System.EventHandler(this.fillToolStripButton2_Click);
             // 
@@ -564,7 +753,7 @@
             this.report4DataGridView.ReadOnly = true;
             this.report4DataGridView.RowHeadersVisible = false;
             this.report4DataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.report4DataGridView.Size = new System.Drawing.Size(685, 253);
+            this.report4DataGridView.Size = new System.Drawing.Size(685, 251);
             this.report4DataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn34
@@ -618,10 +807,10 @@
             // 
             this.tpTicketsCertainViewer_.Controls.Add(this.fillToolStrip3);
             this.tpTicketsCertainViewer_.Controls.Add(this.report5DataGridView);
-            this.tpTicketsCertainViewer_.Location = new System.Drawing.Point(4, 22);
+            this.tpTicketsCertainViewer_.Location = new System.Drawing.Point(4, 24);
             this.tpTicketsCertainViewer_.Name = "tpTicketsCertainViewer_";
             this.tpTicketsCertainViewer_.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTicketsCertainViewer_.Size = new System.Drawing.Size(691, 316);
+            this.tpTicketsCertainViewer_.Size = new System.Drawing.Size(691, 314);
             this.tpTicketsCertainViewer_.TabIndex = 4;
             this.tpTicketsCertainViewer_.Text = "Билеты определенного зрителя";
             this.tpTicketsCertainViewer_.UseVisualStyleBackColor = true;
@@ -629,6 +818,7 @@
             // fillToolStrip3
             // 
             this.fillToolStrip3.Dock = System.Windows.Forms.DockStyle.None;
+            this.fillToolStrip3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.fillToolStrip3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.fillToolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewerToolStripLabel1,
@@ -636,14 +826,14 @@
             this.fillToolStripButton3});
             this.fillToolStrip3.Location = new System.Drawing.Point(5, 24);
             this.fillToolStrip3.Name = "fillToolStrip3";
-            this.fillToolStrip3.Size = new System.Drawing.Size(258, 25);
+            this.fillToolStrip3.Size = new System.Drawing.Size(267, 25);
             this.fillToolStrip3.TabIndex = 1;
             this.fillToolStrip3.Text = "fillToolStrip3";
             // 
             // viewerToolStripLabel1
             // 
             this.viewerToolStripLabel1.Name = "viewerToolStripLabel1";
-            this.viewerToolStripLabel1.Size = new System.Drawing.Size(107, 22);
+            this.viewerToolStripLabel1.Size = new System.Drawing.Size(113, 22);
             this.viewerToolStripLabel1.Text = "Фамилия зрителя:";
             // 
             // viewerToolStripTextBox1
@@ -655,7 +845,7 @@
             // 
             this.fillToolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.fillToolStripButton3.Name = "fillToolStripButton3";
-            this.fillToolStripButton3.Size = new System.Drawing.Size(46, 22);
+            this.fillToolStripButton3.Size = new System.Drawing.Size(49, 22);
             this.fillToolStripButton3.Text = "Поиск";
             this.fillToolStripButton3.Click += new System.EventHandler(this.fillToolStripButton3_Click);
             // 
@@ -688,7 +878,7 @@
             this.report5DataGridView.ReadOnly = true;
             this.report5DataGridView.RowHeadersVisible = false;
             this.report5DataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.report5DataGridView.Size = new System.Drawing.Size(685, 253);
+            this.report5DataGridView.Size = new System.Drawing.Size(685, 251);
             this.report5DataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn40
@@ -782,10 +972,13 @@
             // 
             // lblSaveReport
             // 
+            this.lblSaveReport.ActiveLinkColor = System.Drawing.Color.LightGray;
             this.lblSaveReport.AutoSize = true;
+            this.lblSaveReport.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblSaveReport.LinkColor = System.Drawing.Color.Gray;
             this.lblSaveReport.Location = new System.Drawing.Point(12, 9);
             this.lblSaveReport.Name = "lblSaveReport";
-            this.lblSaveReport.Size = new System.Drawing.Size(90, 13);
+            this.lblSaveReport.Size = new System.Drawing.Size(97, 15);
             this.lblSaveReport.TabIndex = 1;
             this.lblSaveReport.TabStop = true;
             this.lblSaveReport.Text = "Сохранить отчет";
@@ -851,195 +1044,11 @@
             // 
             this.report5TableAdapter.ClearBeforeFill = true;
             // 
-            // продажа_билетов_в_театрDataSet1
-            // 
-            this.продажа_билетов_в_театрDataSet1.DataSetName = "Продажа_билетов_в_театрDataSet";
-            this.продажа_билетов_в_театрDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // report1BindingSource
-            // 
-            this.report1BindingSource.DataMember = "report1";
-            this.report1BindingSource.DataSource = this.продажа_билетов_в_театрDataSet1;
-            // 
-            // report1DataGridView
-            // 
-            this.report1DataGridView.AllowUserToAddRows = false;
-            this.report1DataGridView.AllowUserToDeleteRows = false;
-            this.report1DataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.report1DataGridView.AutoGenerateColumns = false;
-            this.report1DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.report1DataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.report1DataGridView.BackgroundColor = System.Drawing.Color.White;
-            this.report1DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.report1DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn16,
-            this.dataGridViewTextBoxColumn17});
-            this.report1DataGridView.DataSource = this.report1BindingSource;
-            this.report1DataGridView.Location = new System.Drawing.Point(3, 60);
-            this.report1DataGridView.Name = "report1DataGridView";
-            this.report1DataGridView.ReadOnly = true;
-            this.report1DataGridView.RowHeadersVisible = false;
-            this.report1DataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.report1DataGridView.Size = new System.Drawing.Size(685, 253);
-            this.report1DataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Спектакль";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Спектакль";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 86;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Дата спектакля";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Дата спектакля";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 105;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Время начала спектакля";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Время начала спектакля";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 145;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Тип спектакля";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Тип спектакля";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 98;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Продолжительность";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Продолжительность";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 136;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Театр";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Театр";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 62;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Зал";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Зал";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 51;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Ряд";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Ряд";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Width = 51;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Место";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Место";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            this.dataGridViewTextBoxColumn9.Width = 64;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Цена";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Цена";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            this.dataGridViewTextBoxColumn10.Width = 58;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Дата продажи";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Дата продажи";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            this.dataGridViewTextBoxColumn11.Width = 96;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Фамилия Зрителя";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Фамилия Зрителя";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            this.dataGridViewTextBoxColumn12.Width = 115;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "Имя Зрителя";
-            this.dataGridViewTextBoxColumn13.HeaderText = "Имя Зрителя";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            this.dataGridViewTextBoxColumn13.Width = 91;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "Отчество Зрителя";
-            this.dataGridViewTextBoxColumn14.HeaderText = "Отчество Зрителя";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            this.dataGridViewTextBoxColumn14.Width = 114;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "Фамилия Кассира";
-            this.dataGridViewTextBoxColumn15.HeaderText = "Фамилия Кассира";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.ReadOnly = true;
-            this.dataGridViewTextBoxColumn15.Width = 116;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "Имя Кассира";
-            this.dataGridViewTextBoxColumn16.HeaderText = "Имя Кассира";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.ReadOnly = true;
-            this.dataGridViewTextBoxColumn16.Width = 92;
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "Отчество Кассира";
-            this.dataGridViewTextBoxColumn17.HeaderText = "Отчество Кассира";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.ReadOnly = true;
-            this.dataGridViewTextBoxColumn17.Width = 114;
-            // 
             // FormReports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(699, 369);
             this.Controls.Add(this.lblSaveReport);
             this.Controls.Add(this.tabReports);
@@ -1054,6 +1063,9 @@
             this.Load += new System.EventHandler(this.FormReports_Load);
             this.tabReports.ResumeLayout(false);
             this.tpAllSalesTickets.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.report1DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.report1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.продажа_билетов_в_театрDataSet1)).EndInit();
             this.tpTicketsCertainViewer.ResumeLayout(false);
             this.tpTicketsCertainViewer.PerformLayout();
             this.fillToolStrip.ResumeLayout(false);
@@ -1079,9 +1091,6 @@
             this.fillToolStrip3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.report5DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.report5BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.продажа_билетов_в_театрDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.report1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.report1DataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

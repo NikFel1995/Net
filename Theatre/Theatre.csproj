@@ -32,7 +32,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>theatre.ico</ApplicationIcon>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
@@ -100,6 +104,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Продажа_билетов_в_театрDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Продажа_билетов_в_театрDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Продажа_билетов_в_театрDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormAbout.resx">
       <DependentUpon>FormAbout.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,12 +160,24 @@
     <None Include="Продажа_билетов_в_театрDataSet.xss">
       <DependentUpon>Продажа_билетов_в_театрDataSet.xsd</DependentUpon>
     </None>
+    <None Include="Продажа_билетов_в_театрDataSet1.xsc">
+      <DependentUpon>Продажа_билетов_в_театрDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Продажа_билетов_в_театрDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Продажа_билетов_в_театрDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Продажа_билетов_в_театрDataSet1.xss">
+      <DependentUpon>Продажа_билетов_в_театрDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pic01.jpg" />
+    <Content Include="icon.ico" />
     <Content Include="theatre.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
